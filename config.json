@@ -1,0 +1,17 @@
+{
+  "graphics": {
+  	"enable": true,
+    "window": {
+      "width": 960,
+      "height": 540,
+      "vwdith": 480,
+      "vheight": 270,
+      "title": "Gundam Game",
+      "fullscreen": true,
+      "vsync": true
+    },
+    "audio": {
+    	"enable": false
+    }
+  },
+}

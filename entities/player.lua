@@ -19,7 +19,7 @@ function player:new(_character)
 
 	self.speed = 100
 	self.aim = libs.vector(0, 0)
-	self.aimLength = 200
+	self.aimLength = 2000
 	self.lookat = libs.vector(1, 0)
 end
 
@@ -53,9 +53,9 @@ function player:update(_dt)
 end
 
 function player:draw()
-	graphics.beginmode2d(smgr.camera)
+	--graphics.beginmode2d(smgr.camera)
 	
-	--graphics.drawcircle(self.position.x, self.position.y, 30, RED)
+	graphics.drawcircle(self.position.x, self.position.y, 30, RED)
 	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, 0, graphics.colors.white)
 	graphics.drawline(self.position.x, self.position.y, self.aim.x, self.aim.y, GREEN)
 	graphics.endmode2d()

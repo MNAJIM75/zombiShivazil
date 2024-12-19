@@ -8,7 +8,7 @@ function objs.color(_r, _g, _b, _a)
 end
 
 function objs.vector(_x, _y)
-	return rl.new("Vector2", _x, _y)
+	return rl.new("Vector2", _x or 0, _y or 0)
 end
 
 function objs.camera(_tx, _ty, _ox, _oy, _z, _r)

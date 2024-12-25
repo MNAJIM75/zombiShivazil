@@ -16,6 +16,7 @@ function tb:load()
             local _module = libs.path.basename(libs.path.splitext(P))
             if _module and "init" == _module then return end
             tb[_module] = loadsprite(P)
+            graphics.canvasfilter(tb[_module], graphics.canvas_filter.point)
             print("[".. _tbName .. "] -> " .. "[" .. type(tb[_module]).."]" .. _module .. " Loaded.")
         end
     end, {

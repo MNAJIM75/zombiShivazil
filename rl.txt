@@ -1,0 +1,981 @@
+ResetPhysics -> cdata<void (*)()>: 0x7ff624d62070
+ClosePhysics -> cdata<void (*)()>: 0x7ff624d62010
+SetPhysicsTimeStep -> cdata<void (*)()>: 0x7ff624d61890
+SetPhysicsGravity -> cdata<void (*)()>: 0x7ff624d617b0
+CreatePhysicsBodyCircle -> cdata<struct PhysicsBodyData *(*)()>: 0x7ff624d62e60
+CreatePhysicsBodyRectangle -> cdata<struct PhysicsBodyData *(*)()>: 0x7ff624d63080
+CreatePhysicsBodyPolygon -> cdata<struct PhysicsBodyData *(*)()>: 0x7ff624d62b40
+DestroyPhysicsBody -> cdata<void (*)()>: 0x7ff624d61ec0
+PhysicsAddForce -> cdata<void (*)()>: 0x7ff624d617c0
+PhysicsAddTorque -> cdata<void (*)()>: 0x7ff624d617e0
+PhysicsShatter -> cdata<void (*)()>: 0x7ff624d63380
+SetPhysicsBodyRotation -> cdata<void (*)()>: 0x7ff624d628e0
+GetPhysicsBody -> cdata<struct PhysicsBodyData *(*)()>: 0x7ff624d61800
+GetPhysicsBodiesCount -> cdata<int (*)()>: 0x7ff624d617f0
+GetPhysicsShapeType -> cdata<int (*)()>: 0x7ff624d61820
+GetPhysicsShapeVerticesCount -> cdata<int (*)()>: 0x7ff624d61850
+GetPhysicsShapeVertex -> cdata<struct Vector2 (*)()>: 0x7ff624d62150
+GuiEnable -> cdata<void (*)()>: 0x7ff624d61450
+GuiDisable -> cdata<void (*)()>: 0x7ff624d61470
+GuiLock -> cdata<void (*)()>: 0x7ff624d61490
+GuiUnlock -> cdata<void (*)()>: 0x7ff624d614a0
+GuiIsLocked -> cdata<bool (*)()>: 0x7ff624d614b0
+GuiFade -> cdata<void (*)()>: 0x7ff624d614c0
+GuiSetState -> cdata<void (*)()>: 0x7ff624d61500
+GuiGetState -> cdata<int (*)()>: 0x7ff624d61510
+GuiSetFont -> cdata<void (*)()>: 0x7ff624d689c0
+GuiGetFont -> cdata<struct Font (*)()>: 0x7ff624d61520
+GuiSetStyle -> cdata<void (*)()>: 0x7ff624d66060
+GuiGetStyle -> cdata<int (*)()>: 0x7ff624d65d90
+GuiWindowBox -> cdata<bool (*)()>: 0x7ff624d731c0
+GuiGroupBox -> cdata<void (*)()>: 0x7ff624d74df0
+GuiLine -> cdata<void (*)()>: 0x7ff624d74b90
+GuiPanel -> cdata<void (*)()>: 0x7ff624d6ee70
+GuiTabBar -> cdata<int (*)()>: 0x7ff624d72ca0
+GuiScrollPanel -> cdata<struct Rectangle (*)()>: 0x7ff624d6d810
+GuiLabel -> cdata<void (*)()>: 0x7ff624d715a0
+GuiButton -> cdata<bool (*)()>: 0x7ff624d72a00
+GuiLabelButton -> cdata<bool (*)()>: 0x7ff624d713e0
+GuiToggle -> cdata<bool (*)()>: 0x7ff624d72340
+GuiToggleGroup -> cdata<int (*)()>: 0x7ff624d72810
+GuiCheckBox -> cdata<bool (*)()>: 0x7ff624d70c40
+GuiComboBox -> cdata<int (*)()>: 0x7ff624d745b0
+GuiDropdownBox -> cdata<bool (*)()>: 0x7ff624d700d0
+GuiSpinner -> cdata<bool (*)()>: 0x7ff624d73de0
+GuiValueBox -> cdata<bool (*)()>: 0x7ff624d6f7e0
+GuiTextBox -> cdata<bool (*)()>: 0x7ff624d719f0
+GuiTextBoxMulti -> cdata<bool (*)()>: 0x7ff624d67bb0
+GuiSlider -> cdata<float (*)()>: 0x7ff624d6af90
+GuiSliderBar -> cdata<float (*)()>: 0x7ff624d6af40
+GuiProgressBar -> cdata<float (*)()>: 0x7ff624d6f050
+GuiStatusBar -> cdata<void (*)()>: 0x7ff624d6d5e0
+GuiDummyRec -> cdata<void (*)()>: 0x7ff624d6d3d0
+GuiGrid -> cdata<struct Vector2 (*)()>: 0x7ff624d67800
+GuiListView -> cdata<int (*)()>: 0x7ff624d6d370
+GuiListViewEx -> cdata<int (*)()>: 0x7ff624d6c190
+EaseElasticInOut -> function: 0x024135e1e4f0
+EaseElasticOut -> function: 0x024135e1e4c0
+EaseElasticIn -> function: 0x024135e1e490
+EaseBounceInOut -> function: 0x024135e1e458
+EaseBounceIn -> function: 0x0241342e09c0
+EaseBounceOut -> function: 0x024135e1e428
+EaseBackInOut -> function: 0x024135e1e3f8
+EaseBackOut -> function: 0x024135e1e3c8
+EaseBackIn -> function: 0x024135e1e398
+EaseExpoInOut -> function: 0x024135e1e368
+EaseExpoOut -> function: 0x024135e1e338
+EaseExpoIn -> function: 0x024135e1e308
+EaseQuadInOut -> function: 0x024135e1e2d8
+EaseQuadOut -> function: 0x024135e1e2a8
+EaseQuadIn -> function: 0x024135e1e278
+EaseCubicInOut -> function: 0x024135e1e248
+EaseCubicOut -> function: 0x024135e1e218
+EaseCubicIn -> function: 0x024135e1e1e8
+EaseCircInOut -> function: 0x024135e1e1b8
+EaseCircOut -> function: 0x024135e1e188
+EaseCircIn -> function: 0x024135e1e158
+EaseSineInOut -> function: 0x024135e1e128
+EaseSineOut -> function: 0x024135e1e0f8
+EaseSineIn -> function: 0x024135e1e0c8
+EaseLinearInOut -> function: 0x0241342b5c58
+EaseLinearOut -> function: 0x0241342b5c58
+EaseLinearIn -> function: 0x0241342b5c58
+EaseLinearNone -> function: 0x0241342b5c58
+__newindex -> function: 0x024135e1df98
+DisableCursor -> cdata<void (*)()>: 0x7ff624d90ca0
+new -> function: builtin#188
+IsAudioStreamReady -> cdata<bool (*)()>: 0x7ff624e83020
+ref -> function: 0x0241342b5718
+UnloadAudioStream -> cdata<void (*)()>: 0x7ff624e83050
+MATERIAL_MAP_SPECULAR -> 1
+UpdateAudioStream -> cdata<void (*)()>: 0x7ff624e830a0
+MATERIAL_MAP_DIFFUSE -> 0
+IsAudioStreamProcessed -> cdata<bool (*)()>: 0x7ff624e837f0
+PlayAudioStream -> cdata<void (*)()>: 0x7ff624e83810
+PauseAudioStream -> cdata<void (*)()>: 0x7ff624e83840
+SHADER_LOC_MAP_SPECULAR -> 16
+rlEnableFramebuffer -> cdata<void (*)()>: 0x7ff624d7f640
+RAYWHITE -> cdata<struct Color>: 0x024135e1df88
+MAGENTA -> cdata<struct Color>: 0x024135e1df68
+rlDisableFramebuffer -> cdata<void (*)()>: 0x7ff624d7f650
+BLACK -> cdata<struct Color>: 0x024135e1df28
+WHITE -> cdata<struct Color>: 0x024135e1df08
+rlActiveDrawBuffers -> cdata<void (*)()>: 0x7ff624d7f660
+BROWN -> cdata<struct Color>: 0x024135e1dec8
+rlEnableColorBlend -> cdata<void (*)()>: 0x7ff624d7f6d0
+DARKPURPLE -> cdata<struct Color>: 0x024135e1de88
+rlDisableColorBlend -> cdata<void (*)()>: 0x7ff624d7f6e0
+PURPLE -> cdata<struct Color>: 0x024135e1de48
+DARKBLUE -> cdata<struct Color>: 0x024135e1de28
+rlEnableDepthTest -> cdata<void (*)()>: 0x7ff624d7f6f0
+SKYBLUE -> cdata<struct Color>: 0x024135e1dde8
+rlDisableDepthTest -> cdata<void (*)()>: 0x7ff624d7f700
+LIME -> cdata<struct Color>: 0x024135e1dda8
+GREEN -> cdata<struct Color>: 0x024135e1dd88
+MAROON -> cdata<struct Color>: 0x024135e1dd68
+RED -> cdata<struct Color>: 0x024135e1dd48
+PINK -> cdata<struct Color>: 0x024135e1dd28
+QuaternionToMatrix -> cdata<struct Matrix (*)()>: 0x7ff624d89920
+GOLD -> cdata<struct Color>: 0x024135e1dce8
+YELLOW -> cdata<struct Color>: 0x024135e1dcc8
+DARKGRAY -> cdata<struct Color>: 0x024135e1dca8
+GRAY -> cdata<struct Color>: 0x024135e1dc88
+LIGHTGRAY -> cdata<struct Color>: 0x024135e1dc68
+GetCameraProjectionMatrix -> cdata<struct Matrix (*)()>: 0x7ff624d8cb00
+ImageFromImage -> cdata<struct Image (*)()>: 0x7ff624dc7d50
+CameraRoll -> cdata<void (*)()>: 0x7ff624d8c540
+UpdateTexture -> cdata<void (*)()>: 0x7ff624dcdb00
+CameraYaw -> cdata<void (*)()>: 0x7ff624d8ba30
+CameraMoveToTarget -> cdata<void (*)()>: 0x7ff624d8b870
+UnloadTexture -> cdata<void (*)()>: 0x7ff624dcda00
+LoadRenderTexture -> cdata<struct RenderTexture (*)()>: 0x7ff624dcd880
+CameraMoveForward -> cdata<void (*)()>: 0x7ff624d8b290
+GetCameraRight -> cdata<struct Vector3 (*)()>: 0x7ff624d8b090
+ImageDrawTextEx -> cdata<void (*)()>: 0x7ff624dd0a90
+ImageDraw -> cdata<void (*)()>: 0x7ff624dcfeb0
+GuiSetIconScale -> cdata<void (*)()>: 0x7ff624d61590
+GuiDrawIcon -> cdata<void (*)()>: 0x7ff624d61b60
+GuiLoadIcons -> cdata<char **(*)()>: 0x7ff624d61ce0
+GuiGetIcons -> cdata<unsigned int *(*)()>: 0x7ff624d61580
+GuiIconText -> cdata<const char *(*)()>: 0x7ff624d62740
+GuiSetTooltip -> cdata<void (*)()>: 0x7ff624d61570
+GuiDisableTooltip -> cdata<void (*)()>: 0x7ff624d61560
+ImageDrawPixel -> cdata<void (*)()>: 0x7ff624dcc6f0
+GuiLoadStyleDefault -> cdata<void (*)()>: 0x7ff624d658d0
+GuiLoadStyle -> cdata<void (*)()>: 0x7ff624d68a60
+GuiColorBarHue -> cdata<float (*)()>: 0x7ff624d66e90
+GuiColorBarAlpha -> cdata<float (*)()>: 0x7ff624d660d0
+LoadImageColors -> cdata<struct Color *(*)()>: 0x7ff624dc8c40
+ImageColorBrightness -> cdata<void (*)()>: 0x7ff624dcbd70
+ImageColorGrayscale -> cdata<void (*)()>: 0x7ff624dcac30
+GuiMessageBox -> cdata<int (*)()>: 0x7ff624d73aa0
+DrawRectangleGradientH -> cdata<void (*)()>: 0x7ff624dada60
+DrawRectangleLinesEx -> cdata<void (*)()>: 0x7ff624dadc50
+CheckCollisionSpheres -> cdata<bool (*)()>: 0x7ff624e12e70
+DrawRectangleRoundedLines -> cdata<void (*)()>: 0x7ff624daeba0
+DrawTriangle -> cdata<void (*)()>: 0x7ff624daf9c0
+DrawTriangleLines -> cdata<void (*)()>: 0x7ff624dafb70
+DrawPoly -> cdata<void (*)()>: 0x7ff624db09c0
+UnloadModelAnimation -> cdata<void (*)()>: 0x7ff624e09ef0
+UpdateModelAnimation -> cdata<void (*)()>: 0x7ff624e09840
+SetModelMeshMaterial -> cdata<void (*)()>: 0x7ff624e08000
+SetMaterialTexture -> cdata<void (*)()>: 0x7ff624e07fd0
+IsMaterialReady -> cdata<bool (*)()>: 0x7ff624e07f40
+LoadMaterialDefault -> cdata<struct Material (*)()>: 0x7ff624e06dc0
+EnableCursor -> cdata<void (*)()>: 0x7ff624d90c40
+IsCursorOnScreen -> cdata<bool (*)()>: 0x7ff624d90d00
+BeginDrawing -> cdata<void (*)()>: 0x7ff624d90d80
+EndMode2D -> cdata<void (*)()>: 0x7ff624d90e80
+RL_DYNAMIC_DRAW -> 35048
+RL_SRC_ALPHA -> 770
+RL_SRC_ALPHA_SATURATE -> 776
+RL_MAX -> 32776
+RL_BLEND_EQUATION_RGB -> 32777
+RL_BLEND_COLOR -> 32773
+TakeScreenshot -> cdata<void (*)()>: 0x7ff624d93a60
+SetShaderValueTexture -> cdata<void (*)()>: 0x7ff624d91e10
+RL_TEXTURE_FILTER_ANISOTROPIC -> 12288
+UnloadFileData -> cdata<void (*)()>: 0x7ff624dde1e0
+DrawCircle3D -> cdata<void (*)()>: 0x7ff624e009a0
+TextToInteger -> cdata<int (*)()>: 0x7ff624ddaac0
+TextToLower -> cdata<const char *(*)()>: 0x7ff624ddb1c0
+TextAppend -> cdata<void (*)()>: 0x7ff624ddb0e0
+TextSplit -> cdata<const char **(*)()>: 0x7ff624ddb050
+TextInsert -> cdata<char *(*)()>: 0x7ff624ddae00
+TextSubtext -> cdata<const char *(*)()>: 0x7ff624ddabb0
+TextIsEqual -> cdata<bool (*)()>: 0x7ff624ddab80
+TextCopy -> cdata<int (*)()>: 0x7ff624ddab30
+GetClipboardText -> cdata<const char *(*)()>: 0x7ff624d90ba0
+RL_TEXTURE_FILTER_LINEAR -> 9729
+RL_TEXTURE_FILTER_LINEAR_MIP_NEAREST -> 9985
+RL_STREAM_COPY -> 35042
+RL_DYNAMIC_COPY -> 35050
+RL_ONE_MINUS_SRC_ALPHA -> 771
+RL_DST_COLOR -> 774
+RL_FUNC_ADD -> 32774
+RL_BLEND_DST_RGB -> 32968
+SetTargetFPS -> cdata<void (*)()>: 0x7ff624d938c0
+SetConfigFlags -> cdata<void (*)()>: 0x7ff624d93a50
+GetCameraMatrix2D -> cdata<struct Matrix (*)()>: 0x7ff624d92a00
+GetMouseRay -> cdata<struct Ray (*)()>: 0x7ff624d91e50
+OpenURL -> cdata<void (*)()>: 0x7ff624d94f00
+RL_FLOAT -> 5126
+EndBlendMode -> cdata<void (*)()>: 0x7ff624d916f0
+EndDrawing -> cdata<void (*)()>: 0x7ff624d958f0
+LoadImageFromTexture -> cdata<struct Image (*)()>: 0x7ff624dc6500
+ExportImage -> cdata<bool (*)()>: 0x7ff624dc97a0
+GenImageGradientH -> cdata<struct Image (*)()>: 0x7ff624dc6e00
+GenImageWhiteNoise -> cdata<struct Image (*)()>: 0x7ff624dc74f0
+GenImageCellular -> cdata<struct Image (*)()>: 0x7ff624dc7850
+GenImageText -> cdata<struct Image (*)()>: 0x7ff624dc7bb0
+ImageTextEx -> cdata<struct Image (*)()>: 0x7ff624dd0510
+UpdateTextureRec -> cdata<void (*)()>: 0x7ff624dcdb30
+UnloadRenderTexture -> cdata<void (*)()>: 0x7ff624dcdad0
+IsRenderTextureReady -> cdata<bool (*)()>: 0x7ff624dcda40
+IsTextureReady -> cdata<bool (*)()>: 0x7ff624dcd9d0
+LoadTextureCubemap -> cdata<struct Texture (*)()>: 0x7ff624dd0c80
+LoadTextureFromImage -> cdata<struct Texture (*)()>: 0x7ff624dcd7f0
+LoadTexture -> cdata<struct Texture (*)()>: 0x7ff624dcd730
+ImageDrawText -> cdata<void (*)()>: 0x7ff624dd0ba0
+ImageDrawRectangleLines -> cdata<void (*)()>: 0x7ff624dcd550
+ImageDrawRectangleV -> cdata<void (*)()>: 0x7ff624dcd500
+ImageDrawRectangle -> cdata<void (*)()>: 0x7ff624dcd2b0
+ImageDrawCircleLinesV -> cdata<void (*)()>: 0x7ff624dcd110
+ImageDrawCircleV -> cdata<void (*)()>: 0x7ff624dcd4c0
+ImageDrawCircle -> cdata<void (*)()>: 0x7ff624dcd300
+ResumeAudioStream -> cdata<void (*)()>: 0x7ff624e83850
+IsAudioStreamPlaying -> cdata<bool (*)()>: 0x7ff624e83860
+StopAudioStream -> cdata<void (*)()>: 0x7ff624e83880
+SetAudioStreamVolume -> cdata<void (*)()>: 0x7ff624e838c0
+ImageDrawLineV -> cdata<void (*)()>: 0x7ff624dccf70
+SetAudioStreamPitch -> cdata<void (*)()>: 0x7ff624e838e0
+SetAudioStreamPan -> cdata<void (*)()>: 0x7ff624e83950
+SetAudioStreamBufferSizeDefault -> cdata<void (*)()>: 0x7ff624e83990
+ImageDrawLine -> cdata<void (*)()>: 0x7ff624dccde0
+SetAudioStreamCallback -> cdata<void (*)()>: 0x7ff624e839a0
+ImageDrawPixelV -> cdata<void (*)()>: 0x7ff624dccdb0
+AttachAudioStreamProcessor -> cdata<void (*)()>: 0x7ff624e839b0
+DetachAudioStreamProcessor -> cdata<void (*)()>: 0x7ff624e83a30
+AttachAudioMixedProcessor -> cdata<void (*)()>: 0x7ff624e83ad0
+ImageClearBackground -> cdata<void (*)()>: 0x7ff624dccce0
+DetachAudioMixedProcessor -> cdata<void (*)()>: 0x7ff624e83b50
+Clamp -> cdata<float (*)()>: 0x7ff624d85020
+GetImageAlphaBorder -> cdata<struct Rectangle (*)()>: 0x7ff624dcc1d0
+Lerp -> cdata<float (*)()>: 0x7ff624d85030
+Normalize -> cdata<float (*)()>: 0x7ff624d85040
+Remap -> cdata<float (*)()>: 0x7ff624d85050
+UnloadImagePalette -> cdata<void (*)()>: 0x7ff624dcc1c0
+Wrap -> cdata<float (*)()>: 0x7ff624d85070
+FloatEquals -> cdata<int (*)()>: 0x7ff624d850f0
+LoadImagePalette -> cdata<struct Color *(*)()>: 0x7ff624dcc050
+Vector2Zero -> cdata<struct Vector2 (*)()>: 0x7ff624d85160
+ImageColorReplace -> cdata<void (*)()>: 0x7ff624dcbef0
+Vector2One -> cdata<struct Vector2 (*)()>: 0x7ff624d85170
+Vector2Add -> cdata<struct Vector2 (*)()>: 0x7ff624d85180
+ImageColorContrast -> cdata<void (*)()>: 0x7ff624dcbb20
+Vector2AddValue -> cdata<struct Vector2 (*)()>: 0x7ff624d851a0
+ImageColorInvert -> cdata<void (*)()>: 0x7ff624dcba10
+Vector2Subtract -> cdata<struct Vector2 (*)()>: 0x7ff624d851c0
+Vector2SubtractValue -> cdata<struct Vector2 (*)()>: 0x7ff624d851e0
+Vector2Length -> cdata<float (*)()>: 0x7ff624d85200
+ImageColorTint -> cdata<void (*)()>: 0x7ff624dcb810
+Vector2LengthSqr -> cdata<float (*)()>: 0x7ff624d85230
+Vector2DotProduct -> cdata<float (*)()>: 0x7ff624d85250
+ImageRotateCCW -> cdata<void (*)()>: 0x7ff624dc8ab0
+Vector2Distance -> cdata<float (*)()>: 0x7ff624d85280
+Vector2DistanceSqr -> cdata<float (*)()>: 0x7ff624d852c0
+Vector2Angle -> cdata<float (*)()>: 0x7ff624d852f0
+Vector2LineAngle -> cdata<float (*)()>: 0x7ff624d85320
+Vector2Scale -> cdata<struct Vector2 (*)()>: 0x7ff624d85370
+Vector2Multiply -> cdata<struct Vector2 (*)()>: 0x7ff624d85390
+Vector2Negate -> cdata<struct Vector2 (*)()>: 0x7ff624d853b0
+ImageFlipHorizontal -> cdata<void (*)()>: 0x7ff624dc87c0
+Vector2Divide -> cdata<struct Vector2 (*)()>: 0x7ff624d853d0
+Vector2Normalize -> cdata<struct Vector2 (*)()>: 0x7ff624d853f0
+Vector2Transform -> cdata<struct Vector2 (*)()>: 0x7ff624d85460
+ImageMipmaps -> cdata<void (*)()>: 0x7ff624dc9c90
+Vector2Lerp -> cdata<struct Vector2 (*)()>: 0x7ff624d854d0
+ImageResizeNN -> cdata<void (*)()>: 0x7ff624dcae20
+Vector2Reflect -> cdata<struct Vector2 (*)()>: 0x7ff624d854f0
+Vector2Rotate -> cdata<struct Vector2 (*)()>: 0x7ff624d85530
+Vector2MoveTowards -> cdata<struct Vector2 (*)()>: 0x7ff624d85590
+Vector2Invert -> cdata<struct Vector2 (*)()>: 0x7ff624d85630
+Vector2Clamp -> cdata<struct Vector2 (*)()>: 0x7ff624d85650
+ImageResize -> cdata<void (*)()>: 0x7ff624dc9a90
+Vector2ClampValue -> cdata<struct Vector2 (*)()>: 0x7ff624d856c0
+ImageBlurGaussian -> cdata<void (*)()>: 0x7ff624dcb0d0
+Vector2Equals -> cdata<int (*)()>: 0x7ff624d85780
+ImageAlphaClear -> cdata<void (*)()>: 0x7ff624dc82e0
+Vector3Zero -> cdata<struct Vector3 (*)()>: 0x7ff624d85860
+ImageCrop -> cdata<void (*)()>: 0x7ff624dc7ec0
+Vector3One -> cdata<struct Vector3 (*)()>: 0x7ff624d85880
+Vector3Add -> cdata<struct Vector3 (*)()>: 0x7ff624d858a0
+ImageToPOT -> cdata<void (*)()>: 0x7ff624dc8150
+Vector3AddValue -> cdata<struct Vector3 (*)()>: 0x7ff624d858d0
+ImageFormat -> cdata<void (*)()>: 0x7ff624dcac00
+Vector3Subtract -> cdata<struct Vector3 (*)()>: 0x7ff624d858f0
+Vector3SubtractValue -> cdata<struct Vector3 (*)()>: 0x7ff624d85920
+Vector3Scale -> cdata<struct Vector3 (*)()>: 0x7ff624d85940
+Vector3Multiply -> cdata<struct Vector3 (*)()>: 0x7ff624d85960
+Vector3CrossProduct -> cdata<struct Vector3 (*)()>: 0x7ff624d85990
+Vector3Perpendicular -> cdata<struct Vector3 (*)()>: 0x7ff624d859e0
+ImageText -> cdata<struct Image (*)()>: 0x7ff624dd09b0
+Vector3Length -> cdata<float (*)()>: 0x7ff624d85aa0
+ImageCopy -> cdata<struct Image (*)()>: 0x7ff624dc7c20
+Vector3LengthSqr -> cdata<float (*)()>: 0x7ff624d85ae0
+Vector3DotProduct -> cdata<float (*)()>: 0x7ff624d85b10
+GenImagePerlinNoise -> cdata<struct Image (*)()>: 0x7ff624dc75b0
+Vector3Distance -> cdata<float (*)()>: 0x7ff624d85b40
+Vector3DistanceSqr -> cdata<float (*)()>: 0x7ff624d85b90
+Vector3Angle -> cdata<struct Vector2 (*)()>: 0x7ff624d85bd0
+GenImageChecked -> cdata<struct Image (*)()>: 0x7ff624dc7400
+Vector3Negate -> cdata<struct Vector3 (*)()>: 0x7ff624d85cd0
+Vector3Divide -> cdata<struct Vector3 (*)()>: 0x7ff624d85d00
+Vector3Normalize -> cdata<struct Vector3 (*)()>: 0x7ff624d85d30
+Vector3OrthoNormalize -> cdata<void (*)()>: 0x7ff624d85dd0
+GenImageGradientV -> cdata<struct Image (*)()>: 0x7ff624dc6c20
+Vector3Transform -> cdata<struct Vector3 (*)()>: 0x7ff624d86010
+rlDisableBackfaceCulling -> cdata<void (*)()>: 0x7ff624d7f740
+Vector3RotateByQuaternion -> cdata<struct Vector3 (*)()>: 0x7ff624d860d0
+rlEnableTexture -> cdata<void (*)()>: 0x7ff624d7f2c0
+Vector3RotateByAxisAngle -> cdata<struct Vector3 (*)()>: 0x7ff624d862a0
+rlDisableDepthMask -> cdata<void (*)()>: 0x7ff624d7f720
+Vector3Lerp -> cdata<struct Vector3 (*)()>: 0x7ff624d864a0
+Vector3Reflect -> cdata<struct Vector3 (*)()>: 0x7ff624d864e0
+Vector3Min -> cdata<struct Vector3 (*)()>: 0x7ff624d86550
+Vector3Max -> cdata<struct Vector3 (*)()>: 0x7ff624d865c0
+Vector3Barycenter -> cdata<struct Vector3 (*)()>: 0x7ff624d86630
+rlEnableDepthMask -> cdata<void (*)()>: 0x7ff624d7f710
+Vector3Unproject -> cdata<struct Vector3 (*)()>: 0x7ff624d867e0
+DARKGREEN -> cdata<struct Color>: 0x024135e1ddc8
+Vector3ToFloatV -> cdata<struct float3 (*)()>: 0x7ff624d87230
+BLUE -> cdata<struct Color>: 0x024135e1de08
+Vector3Invert -> cdata<struct Vector3 (*)()>: 0x7ff624d87250
+Vector3Clamp -> cdata<struct Vector3 (*)()>: 0x7ff624d87280
+VIOLET -> cdata<struct Color>: 0x024135e1de68
+Vector3ClampValue -> cdata<struct Vector3 (*)()>: 0x7ff624d87310
+BEIGE -> cdata<struct Color>: 0x024135e1dea8
+Vector3Equals -> cdata<int (*)()>: 0x7ff624d873d0
+DARKBROWN -> cdata<struct Color>: 0x024135e1dee8
+Vector3Refract -> cdata<struct Vector3 (*)()>: 0x7ff624d874f0
+MatrixDeterminant -> cdata<float (*)()>: 0x7ff624d87610
+BLANK -> cdata<struct Color>: 0x024135e1df48
+MatrixTrace -> cdata<float (*)()>: 0x7ff624d87950
+MatrixTranspose -> cdata<struct Matrix (*)()>: 0x7ff624d87970
+SHADER_LOC_MAP_DIFFUSE -> 15
+MatrixInvert -> cdata<struct Matrix (*)()>: 0x7ff624d87a00
+MatrixIdentity -> cdata<struct Matrix (*)()>: 0x7ff624d87ec0
+rlDisableShader -> cdata<void (*)()>: 0x7ff624d7f630
+MatrixAdd -> cdata<struct Matrix (*)()>: 0x7ff624d87ef0
+rlEnableShader -> cdata<void (*)()>: 0x7ff624d7f620
+MatrixSubtract -> cdata<struct Matrix (*)()>: 0x7ff624d87f40
+MatrixMultiply -> cdata<struct Matrix (*)()>: 0x7ff624d83210
+MatrixTranslate -> cdata<struct Matrix (*)()>: 0x7ff624d87f90
+rlCubemapParameters -> cdata<void (*)()>: 0x7ff624d7f490
+MatrixRotate -> cdata<struct Matrix (*)()>: 0x7ff624d87ff0
+rlTextureParameters -> cdata<void (*)()>: 0x7ff624d7f300
+MatrixRotateX -> cdata<struct Matrix (*)()>: 0x7ff624d88240
+rlDisableTextureCubemap -> cdata<void (*)()>: 0x7ff624d7f2f0
+MatrixRotateY -> cdata<struct Matrix (*)()>: 0x7ff624d882c0
+MatrixRotateZ -> cdata<struct Matrix (*)()>: 0x7ff624d88350
+LoadMusicStream -> cdata<struct Music (*)()>: 0x7ff624e82350
+rlEnableTextureCubemap -> cdata<void (*)()>: 0x7ff624d7f2e0
+MatrixRotateZYX -> cdata<struct Matrix (*)()>: 0x7ff624d88580
+MatrixScale -> cdata<struct Matrix (*)()>: 0x7ff624d886e0
+MatrixFrustum -> cdata<struct Matrix (*)()>: 0x7ff624d88730
+GenTextureMipmaps -> cdata<void (*)()>: 0x7ff624dcdb80
+LoadMusicStreamFromMemory -> cdata<struct Music (*)()>: 0x7ff624e829a0
+SetTextureFilter -> cdata<void (*)()>: 0x7ff624dcdbb0
+MatrixOrtho -> cdata<struct Matrix (*)()>: 0x7ff624d889e0
+SetTextureWrap -> cdata<void (*)()>: 0x7ff624dcdce0
+DrawTexture -> cdata<void (*)()>: 0x7ff624dce400
+MatrixToFloatV -> cdata<struct float16 (*)()>: 0x7ff624d88e30
+DrawTextureV -> cdata<void (*)()>: 0x7ff624dce360
+QuaternionAdd -> cdata<struct Vector4 (*)()>: 0x7ff624d88ec0
+DrawTextureEx -> cdata<void (*)()>: 0x7ff624dce240
+QuaternionAddValue -> cdata<struct Vector4 (*)()>: 0x7ff624d88ee0
+DrawTextureRec -> cdata<void (*)()>: 0x7ff624dce2d0
+QuaternionSubtract -> cdata<struct Vector4 (*)()>: 0x7ff624d88f00
+DrawTexturePro -> cdata<void (*)()>: 0x7ff624dcdd90
+QuaternionIdentity -> cdata<struct Vector4 (*)()>: 0x7ff624d88f40
+DrawTextureNPatch -> cdata<void (*)()>: 0x7ff624dce490
+QuaternionLength -> cdata<float (*)()>: 0x7ff624d88f50
+Fade -> cdata<struct Color (*)()>: 0x7ff624dcef80
+DrawTriangleStrip3D -> cdata<void (*)()>: 0x7ff624e00b80
+ColorToInt -> cdata<int (*)()>: 0x7ff624dcefd0
+DrawCube -> cdata<void (*)()>: 0x7ff624e00c60
+ColorNormalize -> cdata<struct Vector4 (*)()>: 0x7ff624dcefe0
+DrawCubeV -> cdata<void (*)()>: 0x7ff624e00fb0
+DrawCubeWires -> cdata<void (*)()>: 0x7ff624e00ff0
+DrawCubeWiresV -> cdata<void (*)()>: 0x7ff624e01280
+DrawSphere -> cdata<void (*)()>: 0x7ff624e01600
+QuaternionNlerp -> cdata<struct Vector4 (*)()>: 0x7ff624d89290
+DrawSphereEx -> cdata<void (*)()>: 0x7ff624e012c0
+QuaternionFromVector3ToVector3 -> cdata<struct Vector4 (*)()>: 0x7ff624d895c0
+DrawSphereWires -> cdata<void (*)()>: 0x7ff624e01640
+DrawCylinder -> cdata<void (*)()>: 0x7ff624e01980
+ColorBrightness -> cdata<struct Color (*)()>: 0x7ff624dcf470
+DrawCylinderEx -> cdata<void (*)()>: 0x7ff624e01e20
+ColorAlpha -> cdata<struct Color (*)()>: 0x7ff624dcf690
+DrawCylinderWires -> cdata<void (*)()>: 0x7ff624e02600
+DrawCylinderWiresEx -> cdata<void (*)()>: 0x7ff624e028a0
+DrawCapsule -> cdata<void (*)()>: 0x7ff624e02fe0
+rlDisableTexture -> cdata<void (*)()>: 0x7ff624d7f2d0
+DrawCapsuleWires -> cdata<void (*)()>: 0x7ff624e03e70
+DrawPlane -> cdata<void (*)()>: 0x7ff624e04d20
+SetPixelColor -> cdata<void (*)()>: 0x7ff624dcfb50
+DrawRay -> cdata<void (*)()>: 0x7ff624e04e20
+GetPixelDataSize -> cdata<int (*)()>: 0x7ff624dd11e0
+DrawGrid -> cdata<void (*)()>: 0x7ff624e04f00
+GetFontDefault -> cdata<struct Font (*)()>: 0x7ff624dd5c60
+LoadModel -> cdata<struct Model (*)()>: 0x7ff624e0ab60
+LoadFont -> cdata<struct Font (*)()>: 0x7ff624ddb5d0
+IsModelReady -> cdata<bool (*)()>: 0x7ff624e050b0
+LoadFontEx -> cdata<struct Font (*)()>: 0x7ff624ddb4f0
+LoadModelFromMesh -> cdata<struct Model (*)()>: 0x7ff624e07e40
+LoadFontFromImage -> cdata<struct Font (*)()>: 0x7ff624dd5c90
+UnloadModel -> cdata<void (*)()>: 0x7ff624e06890
+LoadFontFromMemory -> cdata<struct Font (*)()>: 0x7ff624ddb220
+GetModelBoundingBox -> cdata<struct BoundingBox (*)()>: 0x7ff624e11010
+IsFontReady -> cdata<bool (*)()>: 0x7ff624dd62a0
+DrawModel -> cdata<void (*)()>: 0x7ff624e11fe0
+LoadFontData -> cdata<struct GlyphInfo *(*)()>: 0x7ff624dd62d0
+DrawModelEx -> cdata<void (*)()>: 0x7ff624e117f0
+GenImageFontAtlas -> cdata<struct Image (*)()>: 0x7ff624dd9d60
+DrawModelWires -> cdata<void (*)()>: 0x7ff624e120c0
+DrawModelWiresEx -> cdata<void (*)()>: 0x7ff624e12220
+DrawBoundingBox -> cdata<void (*)()>: 0x7ff624e12df0
+UnloadFont -> cdata<void (*)()>: 0x7ff624dda480
+DrawBillboard -> cdata<void (*)()>: 0x7ff624e12ce0
+ExportFontAsCode -> cdata<bool (*)()>: 0x7ff624ddc610
+DrawBillboardRec -> cdata<void (*)()>: 0x7ff624e12c00
+DrawFPS -> cdata<void (*)()>: 0x7ff624ddd7b0
+DrawBillboardPro -> cdata<void (*)()>: 0x7ff624e12320
+DrawText -> cdata<void (*)()>: 0x7ff624ddd6f0
+UploadMesh -> cdata<void (*)()>: 0x7ff624e050e0
+DrawTextEx -> cdata<void (*)()>: 0x7ff624ddd3b0
+UpdateMeshBuffer -> cdata<void (*)()>: 0x7ff624e05110
+DrawTextPro -> cdata<void (*)()>: 0x7ff624ddd820
+UnloadMesh -> cdata<void (*)()>: 0x7ff624e067e0
+DrawTextCodepoint -> cdata<void (*)()>: 0x7ff624dda530
+DrawMesh -> cdata<void (*)()>: 0x7ff624e05130
+DrawTextCodepoints -> cdata<void (*)()>: 0x7ff624dda6a0
+DrawMeshInstanced -> cdata<void (*)()>: 0x7ff624e05cc0
+MeasureText -> cdata<int (*)()>: 0x7ff624dddb20
+ExportMesh -> cdata<bool (*)()>: 0x7ff624e069b0
+MeasureTextEx -> cdata<struct Vector2 (*)()>: 0x7ff624ddd930
+GetMeshBoundingBox -> cdata<struct BoundingBox (*)()>: 0x7ff624e10e70
+GetGlyphIndex -> cdata<int (*)()>: 0x7ff624dda900
+GenMeshTangents -> cdata<void (*)()>: 0x7ff624e11240
+GetGlyphInfo -> cdata<struct GlyphInfo (*)()>: 0x7ff624dda940
+GenMeshPoly -> cdata<struct Mesh (*)()>: 0x7ff624e09fa0
+GetGlyphAtlasRec -> cdata<struct Rectangle (*)()>: 0x7ff624dda9c0
+GenMeshPlane -> cdata<struct Mesh (*)()>: 0x7ff624e0a2e0
+LoadUTF8 -> cdata<char *(*)()>: 0x7ff624ddd000
+GenMeshCube -> cdata<struct Mesh (*)()>: 0x7ff624e0a790
+UnloadUTF8 -> cdata<void (*)()>: 0x7ff624ddced0
+GenMeshSphere -> cdata<struct Mesh (*)()>: 0x7ff624e0e780
+LoadCodepoints -> cdata<int *(*)()>: 0x7ff624dddbc0
+GenMeshHemiSphere -> cdata<struct Mesh (*)()>: 0x7ff624e0e9e0
+GenMeshCylinder -> cdata<struct Mesh (*)()>: 0x7ff624e0ec60
+DrawCircle -> cdata<void (*)()>: 0x7ff624dabf30
+GenMeshCone -> cdata<struct Mesh (*)()>: 0x7ff624e0f160
+GenMeshTorus -> cdata<struct Mesh (*)()>: 0x7ff624e0f510
+GenMeshKnot -> cdata<struct Mesh (*)()>: 0x7ff624e0f7a0
+GenMeshHeightmap -> cdata<struct Mesh (*)()>: 0x7ff624e0fa20
+GetCodepointNext -> cdata<int (*)()>: 0x7ff624ddd2d0
+GenMeshCubicmap -> cdata<struct Mesh (*)()>: 0x7ff624e10120
+LoadMaterials -> cdata<struct Material *(*)()>: 0x7ff624e07060
+rlEnableBackfaceCulling -> cdata<void (*)()>: 0x7ff624d7f730
+DrawCircleLines -> cdata<void (*)()>: 0x7ff624dac470
+rlActiveTextureSlot -> cdata<void (*)()>: 0x7ff624d7f2b0
+DrawEllipse -> cdata<void (*)()>: 0x7ff624dac5b0
+rlDisableVertexAttribute -> cdata<void (*)()>: 0x7ff624d81640
+DrawEllipseLines -> cdata<void (*)()>: 0x7ff624dac730
+DrawRing -> cdata<void (*)()>: 0x7ff624dac8b0
+TextFormat -> cdata<const char *(*)()>: 0x7ff624ddaa40
+DrawRingLines -> cdata<void (*)()>: 0x7ff624dace30
+DrawRectangle -> cdata<void (*)()>: 0x7ff624dad770
+rlEnableVertexAttribute -> cdata<void (*)()>: 0x7ff624d81630
+DrawRectangleV -> cdata<void (*)()>: 0x7ff624dad6f0
+rlDisableVertexBufferElement -> cdata<void (*)()>: 0x7ff624d81560
+DrawRectangleRec -> cdata<void (*)()>: 0x7ff624dad740
+rlEnableVertexBufferElement -> cdata<void (*)()>: 0x7ff624d81550
+DrawRectanglePro -> cdata<void (*)()>: 0x7ff624dad390
+rlDisableVertexBuffer -> cdata<void (*)()>: 0x7ff624d81540
+DrawRectangleGradientV -> cdata<void (*)()>: 0x7ff624dada10
+rlEnableVertexBuffer -> cdata<void (*)()>: 0x7ff624d81530
+IsModelAnimationValid -> cdata<bool (*)()>: 0x7ff624e09f40
+DrawRectangleGradientEx -> cdata<void (*)()>: 0x7ff624dad7c0
+TextFindIndex -> cdata<int (*)()>: 0x7ff624ddb130
+DrawRectangleLines -> cdata<void (*)()>: 0x7ff624dadab0
+CheckCollisionBoxes -> cdata<bool (*)()>: 0x7ff624e12ec0
+rlDisableVertexArray -> cdata<void (*)()>: 0x7ff624d81610
+CheckCollisionBoxSphere -> cdata<bool (*)()>: 0x7ff624e12f30
+TextToPascal -> cdata<const char *(*)()>: 0x7ff624ddc580
+GetRayCollisionSphere -> cdata<struct RayCollision (*)()>: 0x7ff624e12ff0
+DrawLine3D -> cdata<void (*)()>: 0x7ff624e008b0
+GetRayCollisionBox -> cdata<struct RayCollision (*)()>: 0x7ff624e13370
+DrawPoint3D -> cdata<void (*)()>: 0x7ff624e00920
+GetRayCollisionMesh -> cdata<struct RayCollision (*)()>: 0x7ff624e13c60
+DrawTriangleFan -> cdata<void (*)()>: 0x7ff624dafc60
+GetRayCollisionTriangle -> cdata<struct RayCollision (*)()>: 0x7ff624e13850
+DrawTriangleStrip -> cdata<void (*)()>: 0x7ff624dafe10
+GetRayCollisionQuad -> cdata<struct RayCollision (*)()>: 0x7ff624e14220
+rlEnableVertexArray -> cdata<bool (*)()>: 0x7ff624d815f0
+DrawPolyLines -> cdata<void (*)()>: 0x7ff624db0cb0
+DrawPolyLinesEx -> cdata<void (*)()>: 0x7ff624db0e50
+rlColor4f -> cdata<void (*)()>: 0x7ff624d7f220
+CheckCollisionRecs -> cdata<bool (*)()>: 0x7ff624db1400
+rlColor3f -> cdata<void (*)()>: 0x7ff624d7f270
+CheckCollisionCircles -> cdata<bool (*)()>: 0x7ff624db1480
+rlColor4ub -> cdata<void (*)()>: 0x7ff624d7f1f0
+CheckCollisionCircleRec -> cdata<bool (*)()>: 0x7ff624db14f0
+rlNormal3f -> cdata<void (*)()>: 0x7ff624d7f1d0
+CheckCollisionPointRec -> cdata<bool (*)()>: 0x7ff624db1190
+rlTexCoord2f -> cdata<void (*)()>: 0x7ff624d7f1c0
+CheckCollisionPointCircle -> cdata<bool (*)()>: 0x7ff624db11f0
+rlVertex3f -> cdata<void (*)()>: 0x7ff624d84aa0
+CheckCollisionPointTriangle -> cdata<bool (*)()>: 0x7ff624db1260
+rlVertex2f -> cdata<void (*)()>: 0x7ff624d84d50
+CheckCollisionPointPoly -> cdata<bool (*)()>: 0x7ff624db1350
+rlVertex2i -> cdata<void (*)()>: 0x7ff624d84d70
+CheckCollisionLines -> cdata<bool (*)()>: 0x7ff624db15d0
+rlEnd -> cdata<void (*)()>: 0x7ff624d7f1a0
+CheckCollisionPointLine -> cdata<bool (*)()>: 0x7ff624db18d0
+rlBegin -> cdata<void (*)()>: 0x7ff624d84da0
+GetCollisionRec -> cdata<struct Rectangle (*)()>: 0x7ff624db1a90
+rlViewport -> cdata<void (*)()>: 0x7ff624d7f190
+LoadImage -> cdata<struct Image (*)()>: 0x7ff624dc6360
+rlOrtho -> cdata<void (*)()>: 0x7ff624d83cc0
+LoadImageRaw -> cdata<struct Image (*)()>: 0x7ff624dc5e70
+rlFrustum -> cdata<void (*)()>: 0x7ff624d83a90
+LoadImageAnim -> cdata<struct Image (*)()>: 0x7ff624dc63f0
+rlMultMatrixf -> cdata<void (*)()>: 0x7ff624d83950
+LoadImageFromMemory -> cdata<struct Image (*)()>: 0x7ff624dc5fd0
+rlScalef -> cdata<void (*)()>: 0x7ff624d83800
+InitWindow -> cdata<void (*)()>: 0x7ff624d8f960
+rlRotatef -> cdata<void (*)()>: 0x7ff624d834a0
+WindowShouldClose -> cdata<bool (*)()>: 0x7ff624d8ea40
+rlTranslatef -> cdata<void (*)()>: 0x7ff624d83350
+CloseWindow -> cdata<void (*)()>: 0x7ff624d8e9c0
+rlLoadIdentity -> cdata<void (*)()>: 0x7ff624d7f150
+IsWindowReady -> cdata<bool (*)()>: 0x7ff624d8eab0
+IsWindowFullscreen -> cdata<bool (*)()>: 0x7ff624d8eac0
+IsWindowHidden -> cdata<bool (*)()>: 0x7ff624d8ead0
+IsWindowMinimized -> cdata<bool (*)()>: 0x7ff624d8eae0
+IsWindowMaximized -> cdata<bool (*)()>: 0x7ff624d8eaf0
+IsWindowFocused -> cdata<bool (*)()>: 0x7ff624d8eb00
+IsWindowResized -> cdata<bool (*)()>: 0x7ff624d8eb10
+IsWindowState -> cdata<bool (*)()>: 0x7ff624d8eb20
+rlPopMatrix -> cdata<void (*)()>: 0x7ff624d7f0d0
+SetWindowState -> cdata<void (*)()>: 0x7ff624d8f1a0
+GenImageGradientRadial -> cdata<struct Image (*)()>: 0x7ff624dc7050
+ClearWindowState -> cdata<void (*)()>: 0x7ff624d8f4f0
+ToggleFullscreen -> cdata<void (*)()>: 0x7ff624d8f040
+MaximizeWindow -> cdata<void (*)()>: 0x7ff624d8eb30
+MinimizeWindow -> cdata<void (*)()>: 0x7ff624d8eb70
+RestoreWindow -> cdata<void (*)()>: 0x7ff624d8eb80
+SetWindowIcon -> cdata<void (*)()>: 0x7ff624d8ebc0
+rlPushMatrix -> cdata<void (*)()>: 0x7ff624d7f020
+SetWindowIcons -> cdata<void (*)()>: 0x7ff624d8ec40
+rlMatrixMode -> cdata<void (*)()>: 0x7ff624d7efd0
+SetWindowTitle -> cdata<void (*)()>: 0x7ff624d8ed10
+QuaternionEquals -> cdata<int (*)()>: 0x7ff624d8a1c0
+SetWindowPosition -> cdata<void (*)()>: 0x7ff624d8ed30
+QuaternionTransform -> cdata<struct Vector4 (*)()>: 0x7ff624d8a100
+SetWindowMonitor -> cdata<void (*)()>: 0x7ff624d8ed50
+QuaternionToEuler -> cdata<struct Vector3 (*)()>: 0x7ff624d89f80
+SetWindowMinSize -> cdata<void (*)()>: 0x7ff624d8edf0
+SetWindowSize -> cdata<void (*)()>: 0x7ff624d8ee30
+SetWindowOpacity -> cdata<void (*)()>: 0x7ff624d8ee50
+QuaternionFromEuler -> cdata<struct Vector4 (*)()>: 0x7ff624d89e30
+GetWindowHandle -> cdata<void *(*)()>: 0x7ff624d8eed0
+QuaternionToAxisAngle -> cdata<void (*)()>: 0x7ff624d89ca0
+GetScreenWidth -> cdata<int (*)()>: 0x7ff624d8ee90
+QuaternionFromAxisAngle -> cdata<struct Vector4 (*)()>: 0x7ff624d89aa0
+GetScreenHeight -> cdata<int (*)()>: 0x7ff624d8eea0
+GetRenderWidth -> cdata<int (*)()>: 0x7ff624d8eeb0
+GetRenderHeight -> cdata<int (*)()>: 0x7ff624d8eec0
+GetMonitorCount -> cdata<int (*)()>: 0x7ff624d8eee0
+GetCurrentMonitor -> cdata<int (*)()>: 0x7ff624d8ef00
+GetMonitorPosition -> cdata<struct Vector2 (*)()>: 0x7ff624d8f810
+ImageAlphaMask -> cdata<void (*)()>: 0x7ff624dcac60
+GetMonitorWidth -> cdata<int (*)()>: 0x7ff624d8f880
+ImageAlphaPremultiply -> cdata<void (*)()>: 0x7ff624dcaf90
+GetMonitorHeight -> cdata<int (*)()>: 0x7ff624d8f8f0
+GetMonitorPhysicalWidth -> cdata<int (*)()>: 0x7ff624d907d0
+GetMonitorPhysicalHeight -> cdata<int (*)()>: 0x7ff624d90830
+GetMonitorRefreshRate -> cdata<int (*)()>: 0x7ff624d90890
+GetWindowPosition -> cdata<struct Vector2 (*)()>: 0x7ff624d908e0
+ImageResizeCanvas -> cdata<void (*)()>: 0x7ff624dc8120
+GetWindowScaleDPI -> cdata<struct Vector2 (*)()>: 0x7ff624d90930
+GetMonitorName -> cdata<const char *(*)()>: 0x7ff624d90b40
+ImageDither -> cdata<void (*)()>: 0x7ff624dc9020
+SetClipboardText -> cdata<void (*)()>: 0x7ff624d90b90
+RL_TEXTURE_WRAP_S -> 10242
+RL_TEXTURE_WRAP_T -> 10243
+EnableEventWaiting -> cdata<void (*)()>: 0x7ff624d90bb0
+DisableEventWaiting -> cdata<void (*)()>: 0x7ff624d90bc0
+SwapScreenBuffer -> cdata<void (*)()>: 0x7ff624d95690
+PollInputEvents -> cdata<void (*)()>: 0x7ff624d956a0
+WaitTime -> cdata<void (*)()>: 0x7ff624d95620
+RL_TEXTURE_FILTER_NEAREST_MIP_LINEAR -> 9986
+ShowCursor -> cdata<void (*)()>: 0x7ff624d90bd0
+HideCursor -> cdata<void (*)()>: 0x7ff624d90c00
+IsCursorHidden -> cdata<bool (*)()>: 0x7ff624d90c30
+RL_TEXTURE_MIPMAP_BIAS_RATIO -> 16384
+RL_TEXTURE_WRAP_REPEAT -> 10497
+RL_TEXTURE_WRAP_CLAMP -> 33071
+RL_TEXTURE_WRAP_MIRROR_REPEAT -> 33648
+RL_TEXTURE_WRAP_MIRROR_CLAMP -> 34626
+RL_MODELVIEW -> 5888
+RL_PROJECTION -> 5889
+RL_TEXTURE -> 5890
+RL_LINES -> 1
+RL_TRIANGLES -> 4
+BeginMode3D -> cdata<void (*)()>: 0x7ff624d90f60
+RL_UNSIGNED_BYTE -> 5121
+EndMode3D -> cdata<void (*)()>: 0x7ff624d91400
+BeginTextureMode -> cdata<void (*)()>: 0x7ff624d91520
+RL_STREAM_READ -> 35041
+EndTextureMode -> cdata<void (*)()>: 0x7ff624d915f0
+BeginShaderMode -> cdata<void (*)()>: 0x7ff624d91640
+RL_STATIC_READ -> 35045
+EndShaderMode -> cdata<void (*)()>: 0x7ff624d91680
+BeginBlendMode -> cdata<void (*)()>: 0x7ff624d916c0
+RL_DYNAMIC_READ -> 35049
+BeginScissorMode -> cdata<void (*)()>: 0x7ff624d91740
+RL_FRAGMENT_SHADER -> 35632
+RL_VERTEX_SHADER -> 35633
+BeginVrStereoMode -> cdata<void (*)()>: 0x7ff624d91830
+RL_ZERO -> 0
+RL_ONE -> 1
+LoadVrStereoConfig -> cdata<struct VrStereoConfig (*)()>: 0x7ff624d919b0
+RL_ONE_MINUS_SRC_COLOR -> 769
+UnloadVrStereoConfig -> cdata<void (*)()>: 0x7ff624d91a30
+LoadShader -> cdata<struct Shader (*)()>: 0x7ff624d91bb0
+RL_DST_ALPHA -> 772
+LoadShaderFromMemory -> cdata<struct Shader (*)()>: 0x7ff624d91a40
+IsShaderReady -> cdata<bool (*)()>: 0x7ff624d91c20
+RL_ONE_MINUS_DST_COLOR -> 775
+GetShaderLocation -> cdata<int (*)()>: 0x7ff624d91c90
+RL_CONSTANT_COLOR -> 32769
+GetShaderLocationAttrib -> cdata<int (*)()>: 0x7ff624d91ca0
+SetShaderValue -> cdata<void (*)()>: 0x7ff624d91cb0
+RL_ONE_MINUS_CONSTANT_ALPHA -> 32772
+SetShaderValueV -> cdata<void (*)()>: 0x7ff624d91d00
+RL_MIN -> 32775
+SetShaderValueMatrix -> cdata<void (*)()>: 0x7ff624d91d50
+RL_FUNC_SUBTRACT -> 32778
+LoadFileData -> cdata<unsigned char *(*)()>: 0x7ff624dde090
+RL_BLEND_EQUATION -> 32777
+UnloadShader -> cdata<void (*)()>: 0x7ff624d91c40
+RL_BLEND_EQUATION_ALPHA -> 34877
+SaveFileData -> cdata<bool (*)()>: 0x7ff624dde1f0
+GetCameraMatrix -> cdata<struct Matrix (*)()>: 0x7ff624d926f0
+ExportDataAsCode -> cdata<bool (*)()>: 0x7ff624dde500
+RL_BLEND_SRC_ALPHA -> 32971
+LoadFileText -> cdata<char *(*)()>: 0x7ff624dde2f0
+GetWorldToScreen -> cdata<struct Vector2 (*)()>: 0x7ff624d936c0
+UnloadFileText -> cdata<void (*)()>: 0x7ff624dde420
+GetScreenToWorld2D -> cdata<struct Vector2 (*)()>: 0x7ff624d937c0
+SaveFileText -> cdata<bool (*)()>: 0x7ff624dde430
+GetWorldToScreenEx -> cdata<struct Vector2 (*)()>: 0x7ff624d93060
+FileExists -> cdata<bool (*)()>: 0x7ff624d93ed0
+GetWorldToScreen2D -> cdata<struct Vector2 (*)()>: 0x7ff624d93720
+DirectoryExists -> cdata<bool (*)()>: 0x7ff624d94280
+IsFileExtension -> cdata<bool (*)()>: 0x7ff624d93ef0
+GetFrameTime -> cdata<float (*)()>: 0x7ff624d93a30
+GetFileLength -> cdata<int (*)()>: 0x7ff624d942b0
+GetTime -> cdata<double (*)()>: 0x7ff624d93a40
+GetFileExtension -> cdata<const char *(*)()>: 0x7ff624d94300
+GetRandomValue -> cdata<int (*)()>: 0x7ff624d93e60
+GetFileName -> cdata<const char *(*)()>: 0x7ff624d94330
+GetFileNameWithoutExt -> cdata<const char *(*)()>: 0x7ff624d94380
+GetDirectoryPath -> cdata<const char *(*)()>: 0x7ff624d94420
+GetPrevDirectoryPath -> cdata<const char *(*)()>: 0x7ff624d94560
+GetWorkingDirectory -> cdata<const char *(*)()>: 0x7ff624d94620
+GetApplicationDirectory -> cdata<const char *(*)()>: 0x7ff624d94650
+IsPathFile -> cdata<bool (*)()>: 0x7ff624d94940
+LoadDirectoryFiles -> cdata<struct FilePathList (*)()>: 0x7ff624d946d0
+UpdateSound -> cdata<void (*)()>: 0x7ff624e80d30
+LoadDirectoryFilesEx -> cdata<struct FilePathList (*)()>: 0x7ff624d94810
+UnloadWave -> cdata<void (*)()>: 0x7ff624e80cd0
+UnloadDirectoryFiles -> cdata<void (*)()>: 0x7ff624d948b0
+UnloadSound -> cdata<void (*)()>: 0x7ff624e80ce0
+IsFileDropped -> cdata<bool (*)()>: 0x7ff624d94980
+LoadDroppedFiles -> cdata<struct FilePathList (*)()>: 0x7ff624d94990
+ORANGE -> cdata<struct Color>: 0x024135e1dd08
+UnloadDroppedFiles -> cdata<void (*)()>: 0x7ff624d949b0
+GetFileModTime -> cdata<int (*)()>: 0x7ff624d94a10
+StopSound -> cdata<void (*)()>: 0x7ff624e81780
+CompressData -> cdata<unsigned char *(*)()>: 0x7ff624d94a50
+ResumeSound -> cdata<void (*)()>: 0x7ff624e81770
+DecompressData -> cdata<unsigned char *(*)()>: 0x7ff624d94b20
+EncodeDataBase64 -> cdata<char *(*)()>: 0x7ff624d94bb0
+QuaternionFromMatrix -> cdata<struct Vector4 (*)()>: 0x7ff624d896e0
+DecodeDataBase64 -> cdata<unsigned char *(*)()>: 0x7ff624d94d20
+SetSoundPan -> cdata<void (*)()>: 0x7ff624e81870
+IsKeyPressed -> cdata<bool (*)()>: 0x7ff624d94fa0
+QuaternionSlerp -> cdata<struct Vector4 (*)()>: 0x7ff624d89350
+IsKeyDown -> cdata<bool (*)()>: 0x7ff624d94fd0
+IsKeyReleased -> cdata<bool (*)()>: 0x7ff624d94ff0
+IsKeyUp -> cdata<bool (*)()>: 0x7ff624d95020
+SetExitKey -> cdata<void (*)()>: 0x7ff624d95100
+GetKeyPressed -> cdata<int (*)()>: 0x7ff624d95040
+GetCharPressed -> cdata<int (*)()>: 0x7ff624d950a0
+IsGamepadAvailable -> cdata<bool (*)()>: 0x7ff624d95110
+GetGamepadName -> cdata<const char *(*)()>: 0x7ff624d95130
+IsGamepadButtonPressed -> cdata<bool (*)()>: 0x7ff624d951d0
+QuaternionLerp -> cdata<struct Vector4 (*)()>: 0x7ff624d89270
+IsGamepadButtonDown -> cdata<bool (*)()>: 0x7ff624d95220
+IsGamepadButtonReleased -> cdata<bool (*)()>: 0x7ff624d95260
+IsGamepadButtonUp -> cdata<bool (*)()>: 0x7ff624d952b0
+GetGamepadButtonPressed -> cdata<int (*)()>: 0x7ff624d952f0
+GetGamepadAxisCount -> cdata<int (*)()>: 0x7ff624d95160
+GetGamepadAxisMovement -> cdata<float (*)()>: 0x7ff624d95170
+UpdateMusicStream -> cdata<void (*)()>: 0x7ff624e831b0
+SetGamepadMappings -> cdata<int (*)()>: 0x7ff624d95300
+IsMouseButtonPressed -> cdata<bool (*)()>: 0x7ff624d95310
+IsMouseButtonDown -> cdata<bool (*)()>: 0x7ff624d95350
+IsMouseButtonReleased -> cdata<bool (*)()>: 0x7ff624d95380
+IsMouseButtonUp -> cdata<bool (*)()>: 0x7ff624d953c0
+GetMouseX -> cdata<int (*)()>: 0x7ff624d953f0
+GetMouseY -> cdata<int (*)()>: 0x7ff624d95410
+GetMousePosition -> cdata<struct Vector2 (*)()>: 0x7ff624d95430
+GetMouseDelta -> cdata<struct Vector2 (*)()>: 0x7ff624d95460
+SetMousePosition -> cdata<void (*)()>: 0x7ff624d95480
+SetMouseOffset -> cdata<void (*)()>: 0x7ff624d954c0
+SetMouseScale -> cdata<void (*)()>: 0x7ff624d954e0
+QuaternionDivide -> cdata<struct Vector4 (*)()>: 0x7ff624d89250
+GetMouseWheelMove -> cdata<float (*)()>: 0x7ff624d954f0
+GetMouseWheelMoveV -> cdata<struct Vector2 (*)()>: 0x7ff624d95520
+SetMouseCursor -> cdata<void (*)()>: 0x7ff624d95530
+GetTouchX -> cdata<int (*)()>: 0x7ff624d95570
+GetTouchY -> cdata<int (*)()>: 0x7ff624d95590
+GetTouchPosition -> cdata<struct Vector2 (*)()>: 0x7ff624d955b0
+GetTouchPointId -> cdata<int (*)()>: 0x7ff624d955e0
+QuaternionScale -> cdata<struct Vector4 (*)()>: 0x7ff624d89230
+QuaternionMultiply -> cdata<struct Vector4 (*)()>: 0x7ff624d890f0
+QuaternionInvert -> cdata<struct Vector4 (*)()>: 0x7ff624d89040
+QuaternionNormalize -> cdata<struct Vector4 (*)()>: 0x7ff624d88fa0
+QuaternionSubtractValue -> cdata<struct Vector4 (*)()>: 0x7ff624d88f20
+MatrixLookAt -> cdata<struct Matrix (*)()>: 0x7ff624d88b20
+MatrixPerspective -> cdata<struct Matrix (*)()>: 0x7ff624d88870
+MatrixRotateXYZ -> cdata<struct Matrix (*)()>: 0x7ff624d883c0
+LoadAudioStream -> cdata<struct AudioStream (*)()>: 0x7ff624e82260
+GetMusicTimePlayed -> cdata<float (*)()>: 0x7ff624e821a0
+GetMusicTimeLength -> cdata<float (*)()>: 0x7ff624e82180
+SetMusicPitch -> cdata<void (*)()>: 0x7ff624e820d0
+SetMusicPan -> cdata<void (*)()>: 0x7ff624e82140
+SetMusicVolume -> cdata<void (*)()>: 0x7ff624e820b0
+SeekMusicStream -> cdata<void (*)()>: 0x7ff624e82000
+ResumeMusicStream -> cdata<void (*)()>: 0x7ff624e81dc0
+PauseMusicStream -> cdata<void (*)()>: 0x7ff624e81db0
+StopMusicStream -> cdata<void (*)()>: 0x7ff624e81dd0
+IsMusicStreamPlaying -> cdata<bool (*)()>: 0x7ff624e82090
+PlayMusicStream -> cdata<void (*)()>: 0x7ff624e81d90
+UnloadMusicStream -> cdata<void (*)()>: 0x7ff624e81c60
+IsMusicReady -> cdata<bool (*)()>: 0x7ff624e81c30
+UnloadWaveSamples -> cdata<void (*)()>: 0x7ff624e81c20
+LoadWaveSamples -> cdata<float *(*)()>: 0x7ff624e81b50
+WaveFormat -> cdata<void (*)()>: 0x7ff624e818b0
+WaveCrop -> cdata<void (*)()>: 0x7ff624e81aa0
+WaveCopy -> cdata<struct Wave (*)()>: 0x7ff624e81a10
+SetSoundPitch -> cdata<void (*)()>: 0x7ff624e81800
+SetSoundVolume -> cdata<void (*)()>: 0x7ff624e817e0
+IsSoundPlaying -> cdata<bool (*)()>: 0x7ff624e817c0
+PauseSound -> cdata<void (*)()>: 0x7ff624e81760
+PlaySound -> cdata<void (*)()>: 0x7ff624e81730
+ExportWaveAsCode -> cdata<bool (*)()>: 0x7ff624e81040
+ExportWave -> cdata<bool (*)()>: 0x7ff624e80dc0
+IsSoundReady -> cdata<bool (*)()>: 0x7ff624e80ca0
+LoadSoundFromWave -> cdata<struct Sound (*)()>: 0x7ff624e80a80
+LoadSound -> cdata<struct Sound (*)()>: 0x7ff624e80c30
+IsWaveReady -> cdata<bool (*)()>: 0x7ff624e80a50
+LoadWaveFromMemory -> cdata<struct Wave (*)()>: 0x7ff624e80690
+LoadWave -> cdata<struct Wave (*)()>: 0x7ff624e809c0
+SetMasterVolume -> cdata<void (*)()>: 0x7ff624e80200
+IsAudioDeviceReady -> cdata<bool (*)()>: 0x7ff624e801f0
+CloseAudioDevice -> cdata<void (*)()>: 0x7ff624e80150
+InitAudioDevice -> cdata<void (*)()>: 0x7ff624e7fdd0
+SetTraceLogCallback -> cdata<void (*)()>: 0x7ff624dddd90
+DrawCircleV -> cdata<void (*)()>: 0x7ff624dac440
+GetCodepointPrevious -> cdata<int (*)()>: 0x7ff624dddce0
+DrawCircleGradient -> cdata<void (*)()>: 0x7ff624dac280
+DrawCircleSectorLines -> cdata<void (*)()>: 0x7ff624dabf70
+GetCodepoint -> cdata<int (*)()>: 0x7ff624ddd0a0
+DrawCircleSector -> cdata<void (*)()>: 0x7ff624dab950
+GetCodepointCount -> cdata<int (*)()>: 0x7ff624dddc80
+UnloadCodepoints -> cdata<void (*)()>: 0x7ff624ddcee0
+DrawLineStrip -> cdata<void (*)()>: 0x7ff624dab8c0
+DrawLineBezierCubic -> cdata<void (*)()>: 0x7ff624db0640
+DrawLineBezierQuad -> cdata<void (*)()>: 0x7ff624db0360
+DrawLineBezier -> cdata<void (*)()>: 0x7ff624db0060
+DrawLineEx -> cdata<void (*)()>: 0x7ff624dafee0
+DrawLineV -> cdata<void (*)()>: 0x7ff624dab850
+DrawLine -> cdata<void (*)()>: 0x7ff624dab7d0
+DrawPixelV -> cdata<void (*)()>: 0x7ff624dab5e0
+DrawPixel -> cdata<void (*)()>: 0x7ff624dab7b0
+SetShapesTexture -> cdata<void (*)()>: 0x7ff624dab5b0
+UpdateCamera -> cdata<void (*)()>: 0x7ff624d8cd50
+GetGesturePinchAngle -> cdata<float (*)()>: 0x7ff624d8af30
+GetGesturePinchVector -> cdata<struct Vector2 (*)()>: 0x7ff624d8af20
+GetGestureDragAngle -> cdata<float (*)()>: 0x7ff624d8af10
+GetGestureDragVector -> cdata<struct Vector2 (*)()>: 0x7ff624d8af00
+GetGestureHoldDuration -> cdata<float (*)()>: 0x7ff624d8aec0
+GetGestureDetected -> cdata<int (*)()>: 0x7ff624d8aeb0
+IsGestureDetected -> cdata<bool (*)()>: 0x7ff624d8a470
+SetGesturesEnabled -> cdata<void (*)()>: 0x7ff624d8a460
+GetTouchPointCount -> cdata<int (*)()>: 0x7ff624d95610
+UnloadFontData -> cdata<void (*)()>: 0x7ff624dda400
+GetPixelColor -> cdata<struct Color (*)()>: 0x7ff624dcf890
+TraceLog -> cdata<void (*)()>: 0x7ff624ddddf0
+GetColor -> cdata<struct Color (*)()>: 0x7ff624dcf880
+ColorAlphaBlend -> cdata<struct Color (*)()>: 0x7ff624dcf6f0
+ColorContrast -> cdata<struct Color (*)()>: 0x7ff624dcf540
+ColorTint -> cdata<struct Color (*)()>: 0x7ff624dcf380
+RL_STREAM_DRAW -> 35040
+ColorFromHSV -> cdata<struct Color (*)()>: 0x7ff624dcf1c0
+RL_QUADS -> 7
+ColorToHSV -> cdata<struct Vector3 (*)()>: 0x7ff624dcf090
+ColorFromNormalized -> cdata<struct Color (*)()>: 0x7ff624dcf030
+LoadImageFromScreen -> cdata<struct Image (*)()>: 0x7ff624dc65e0
+UnloadImage -> cdata<void (*)()>: 0x7ff624dc6650
+ExportImageAsCode -> cdata<bool (*)()>: 0x7ff624dc6660
+rlSetCullFace -> cdata<void (*)()>: 0x7ff624d7f750
+rlEnableScissorTest -> cdata<void (*)()>: 0x7ff624d7f780
+rlDisableScissorTest -> cdata<void (*)()>: 0x7ff624d7f790
+rlScissor -> cdata<void (*)()>: 0x7ff624d7f7a0
+rlEnableWireMode -> cdata<void (*)()>: 0x7ff624d7f7b0
+rlDisableWireMode -> cdata<void (*)()>: 0x7ff624d7f7d0
+rlSetLineWidth -> cdata<void (*)()>: 0x7ff624d7f7f0
+rlGetLineWidth -> cdata<float (*)()>: 0x7ff624d7f800
+ImageAlphaCrop -> cdata<void (*)()>: 0x7ff624dcc320
+rlEnableSmoothLines -> cdata<void (*)()>: 0x7ff624d7f830
+rlDisableSmoothLines -> cdata<void (*)()>: 0x7ff624d7f840
+rlEnableStereoRender -> cdata<void (*)()>: 0x7ff624d7f850
+rlDisableStereoRender -> cdata<void (*)()>: 0x7ff624d7f860
+rlIsStereoRenderEnabled -> cdata<bool (*)()>: 0x7ff624d7f870
+ImageFlipVertical -> cdata<void (*)()>: 0x7ff624dc8680
+rlClearColor -> cdata<void (*)()>: 0x7ff624d7f880
+ImageRotateCW -> cdata<void (*)()>: 0x7ff624dc8930
+rlClearScreenBuffers -> cdata<void (*)()>: 0x7ff624d7f8d0
+rlCheckErrors -> cdata<void (*)()>: 0x7ff624d7f8e0
+rlSetBlendMode -> cdata<void (*)()>: 0x7ff624d849a0
+GuiTextInputBox -> cdata<int (*)()>: 0x7ff624d73430
+rlSetBlendFactors -> cdata<void (*)()>: 0x7ff624d7fa40
+GuiColorPicker -> cdata<struct Color (*)()>: 0x7ff624d675d0
+rlSetBlendFactorsSeparate -> cdata<void (*)()>: 0x7ff624d7fa80
+GuiColorPanel -> cdata<struct Color (*)()>: 0x7ff624d667a0
+rlglInit -> cdata<void (*)()>: 0x7ff624d82e80
+UnloadImageColors -> cdata<void (*)()>: 0x7ff624dcc1b0
+rlglClose -> cdata<void (*)()>: 0x7ff624d804c0
+rlLoadExtensions -> cdata<void (*)()>: 0x7ff624d7fb00
+GetImageColor -> cdata<struct Color (*)()>: 0x7ff624dcc3a0
+rlGetVersion -> cdata<int (*)()>: 0x7ff624d7fe50
+GuiEnableTooltip -> cdata<void (*)()>: 0x7ff624d61550
+rlSetFramebufferWidth -> cdata<void (*)()>: 0x7ff624d7fe60
+rlGetFramebufferWidth -> cdata<int (*)()>: 0x7ff624d7fe80
+rlSetFramebufferHeight -> cdata<void (*)()>: 0x7ff624d7fe70
+rlGetFramebufferHeight -> cdata<int (*)()>: 0x7ff624d7fe90
+rlGetTextureIdDefault -> cdata<unsigned int (*)()>: 0x7ff624d7fea0
+ImageDrawCircleLines -> cdata<void (*)()>: 0x7ff624dccfc0
+rlGetShaderIdDefault -> cdata<unsigned int (*)()>: 0x7ff624d7feb0
+rlGetShaderLocsDefault -> cdata<int (*)()>: 0x7ff624d7fec0
+rlLoadRenderBatch -> cdata<struct rlRenderBatch (*)()>: 0x7ff624d7fed0
+ImageDrawRectangleRec -> cdata<void (*)()>: 0x7ff624dcd150
+rlUnloadRenderBatch -> cdata<void (*)()>: 0x7ff624d803a0
+GetCameraForward -> cdata<struct Vector3 (*)()>: 0x7ff624d8af40
+rlDrawRenderBatch -> cdata<void (*)()>: 0x7ff624d83fa0
+GetCameraUp -> cdata<struct Vector3 (*)()>: 0x7ff624d8aff0
+rlSetRenderBatchActive -> cdata<void (*)()>: 0x7ff624d849d0
+rlDrawRenderBatchActive -> cdata<void (*)()>: 0x7ff624d84a00
+rlCheckRenderBatchLimit -> cdata<bool (*)()>: 0x7ff624d84a10
+CameraMoveUp -> cdata<void (*)()>: 0x7ff624d8b480
+rlSetTexture -> cdata<void (*)()>: 0x7ff624d84ea0
+CameraMoveRight -> cdata<void (*)()>: 0x7ff624d8b560
+rlLoadVertexArray -> cdata<unsigned int (*)()>: 0x7ff624d816e0
+rlLoadVertexBuffer -> cdata<unsigned int (*)()>: 0x7ff624d81450
+CameraPitch -> cdata<void (*)()>: 0x7ff624d8bdc0
+rlLoadVertexBufferElement -> cdata<unsigned int (*)()>: 0x7ff624d814c0
+rlUpdateVertexBuffer -> cdata<void (*)()>: 0x7ff624d81570
+GetCameraViewMatrix -> cdata<struct Matrix (*)()>: 0x7ff624d8c7f0
+rlUpdateVertexBufferElements -> cdata<void (*)()>: 0x7ff624d815b0
+rlUnloadVertexArray -> cdata<void (*)()>: 0x7ff624d81730
+rlUnloadVertexBuffer -> cdata<void (*)()>: 0x7ff624d81780
+rlSetVertexAttribute -> cdata<void (*)()>: 0x7ff624d81710
+GenImageColor -> cdata<struct Image (*)()>: 0x7ff624dc6bb0
+rlSetVertexAttributeDivisor -> cdata<void (*)()>: 0x7ff624d81720
+IsImageReady -> cdata<bool (*)()>: 0x7ff624dc6620
+rlSetVertexAttributeDefault -> cdata<void (*)()>: 0x7ff624d81e10
+RL_TEXTURE_MAG_FILTER -> 10240
+rlDrawVertexArray -> cdata<void (*)()>: 0x7ff624d81650
+rlDrawVertexArrayElements -> cdata<void (*)()>: 0x7ff624d81670
+EndVrStereoMode -> cdata<void (*)()>: 0x7ff624d919a0
+rlDrawVertexArrayInstanced -> cdata<void (*)()>: 0x7ff624d81690
+rlDrawVertexArrayElementsInstanced -> cdata<void (*)()>: 0x7ff624d816b0
+MemFree -> cdata<void (*)()>: 0x7ff624dde080
+rlLoadTexture -> cdata<unsigned int (*)()>: 0x7ff624d829b0
+MemRealloc -> cdata<void *(*)()>: 0x7ff624dde070
+rlLoadTextureDepth -> cdata<unsigned int (*)()>: 0x7ff624d80590
+SetTraceLogLevel -> cdata<void (*)()>: 0x7ff624dddde0
+rlLoadTextureCubemap -> cdata<unsigned int (*)()>: 0x7ff624d80950
+SetRandomSeed -> cdata<void (*)()>: 0x7ff624d93ec0
+rlUpdateTexture -> cdata<void (*)()>: 0x7ff624d80d00
+RL_BLEND_DST_ALPHA -> 32970
+rlGetGlTextureFormats -> cdata<void (*)()>: 0x7ff624d80710
+RL_FUNC_REVERSE_SUBTRACT -> 32779
+rlGetPixelFormatName -> cdata<const char (*)()>: 0x7ff624d82840
+RL_ONE_MINUS_CONSTANT_COLOR -> 32770
+rlUnloadTexture -> cdata<void (*)()>: 0x7ff624d80dd0
+rlGenTextureMipmaps -> cdata<void (*)()>: 0x7ff624d80df0
+RL_SRC_COLOR -> 768
+rlReadTexturePixels -> cdata<void (*)()>: 0x7ff624d80ed0
+RL_STATIC_COPY -> 35046
+rlReadScreenPixels -> cdata<unsigned char (*)()>: 0x7ff624d81000
+RL_TEXTURE_FILTER_MIP_LINEAR -> 9987
+rlLoadFramebuffer -> cdata<unsigned int (*)()>: 0x7ff624d810e0
+RL_TEXTURE_FILTER_MIP_NEAREST -> 9984
+rlFramebufferAttach -> cdata<void (*)()>: 0x7ff624d81120
+RL_TEXTURE_FILTER_NEAREST -> 9728
+rlFramebufferComplete -> cdata<bool (*)()>: 0x7ff624d812b0
+CodepointToUTF8 -> cdata<const char *(*)()>: 0x7ff624ddcef0
+rlUnloadFramebuffer -> cdata<void (*)()>: 0x7ff624d81370
+rlLoadShaderCode -> cdata<unsigned int (*)()>: 0x7ff624d81b10
+TextLength -> cdata<unsigned int (*)()>: 0x7ff624ddaa10
+rlCompileShader -> cdata<unsigned int (*)()>: 0x7ff624d817a0
+TextReplace -> cdata<char *(*)()>: 0x7ff624ddac90
+rlLoadShaderProgram -> cdata<unsigned int (*)()>: 0x7ff624d81990
+TextJoin -> cdata<const char *(*)()>: 0x7ff624ddaf00
+rlUnloadShaderProgram -> cdata<void (*)()>: 0x7ff624d81c40
+rlGetLocationUniform -> cdata<int (*)()>: 0x7ff624d81c70
+TextToUpper -> cdata<const char *(*)()>: 0x7ff624ddb160
+rlGetLocationAttrib -> cdata<int (*)()>: 0x7ff624d81ce0
+rlSetUniform -> cdata<void (*)()>: 0x7ff624d81d50
+rlSetUniformMatrix -> cdata<void (*)()>: 0x7ff624d81e90
+DrawTriangle3D -> cdata<void (*)()>: 0x7ff624e00af0
+rlSetUniformSampler -> cdata<void (*)()>: 0x7ff624d81f40
+RL_TEXTURE_MIN_FILTER -> 10241
+rlSetShader -> cdata<void (*)()>: 0x7ff624d84fe0
+EndScissorMode -> cdata<void (*)()>: 0x7ff624d91810
+rlLoadComputeShaderProgram -> cdata<unsigned int (*)()>: 0x7ff624d81fb0
+MemAlloc -> cdata<void *(*)()>: 0x7ff624dde060
+rlComputeShaderDispatch -> cdata<void (*)()>: 0x7ff624d820b0
+GetFPS -> cdata<int (*)()>: 0x7ff624d93930
+rlLoadShaderBuffer -> cdata<unsigned int (*)()>: 0x7ff624d820c0
+RL_BLEND_SRC_RGB -> 32969
+rlUnloadShaderBuffer -> cdata<void (*)()>: 0x7ff624d82150
+rlUpdateShaderBuffer -> cdata<void (*)()>: 0x7ff624d82170
+RL_CONSTANT_ALPHA -> 32771
+rlBindShaderBuffer -> cdata<void (*)()>: 0x7ff624d82230
+RL_ONE_MINUS_DST_ALPHA -> 773
+rlReadShaderBuffer -> cdata<void (*)()>: 0x7ff624d821f0
+RL_COMPUTE_SHADER -> 37305
+rlCopyShaderBuffer -> cdata<void (*)()>: 0x7ff624d82240
+RL_STATIC_DRAW -> 35044
+rlGetShaderBufferSize -> cdata<unsigned int (*)()>: 0x7ff624d821b0
+BeginMode2D -> cdata<void (*)()>: 0x7ff624d92e90
+rlBindImageTexture -> cdata<void (*)()>: 0x7ff624d822a0
+ClearBackground -> cdata<void (*)()>: 0x7ff624d90d10
+rlGetMatrixModelview -> cdata<struct Matrix (*)()>: 0x7ff624d82300
+__index -> function: 0x0241342ee000
+rlGetMatrixProjection -> cdata<struct Matrix (*)()>: 0x7ff624d82330
+rlGetMatrixTransform -> cdata<struct Matrix (*)()>: 0x7ff624d82370
+rlGetMatrixProjectionStereo -> cdata<struct Matrix (*)()>: 0x7ff624d823a0
+UnloadMaterial -> cdata<void (*)()>: 0x7ff624e07f60
+rlGetMatrixViewOffsetStereo -> cdata<struct Matrix (*)()>: 0x7ff624d823e0
+rlSetMatrixProjection -> cdata<void (*)()>: 0x7ff624d82450
+LoadModelAnimations -> cdata<struct ModelAnimation *(*)()>: 0x7ff624e08050
+rlSetMatrixModelview -> cdata<void (*)()>: 0x7ff624d82420
+rlSetMatrixProjectionStereo -> cdata<void (*)()>: 0x7ff624d82480
+UnloadModelAnimations -> cdata<void (*)()>: 0x7ff624e09e70
+rlSetMatrixViewOffsetStereo -> cdata<void (*)()>: 0x7ff624d824e0
+rlLoadDrawCube -> cdata<void (*)()>: 0x7ff624d826b0
+rlLoadDrawQuad -> cdata<void (*)()>: 0x7ff624d82540
+ProcessGestureEvent -> cdata<void (*)()>: 0x7ff624d8a490
+DrawRectangleRounded -> cdata<void (*)()>: 0x7ff624daddc0
+UpdateGestures -> cdata<void (*)()>: 0x7ff624d8ae00
+InitPhysics -> cdata<void (*)()>: 0x7ff624d627d0
+UpdatePhysics -> cdata<void (*)()>: 0x7ff624d64870

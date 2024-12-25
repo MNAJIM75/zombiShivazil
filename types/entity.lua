@@ -1,7 +1,7 @@
-local ent = libs.classic:extend()
+local ent = phy.circle:extend()
 
 function ent:new(_posx, _posy, _name)
-	self.position = libs.vector(_posx or 0, _posy or 0)
+	ent.super.new(self, _posx, _posy, 0, 0, 0, 0, phy.getid())
 	self.name = _name or "Entity"
 	self.enable = true
 end

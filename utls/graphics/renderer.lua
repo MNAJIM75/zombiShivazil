@@ -10,14 +10,14 @@ local graphics = {
 -- Texture Handler
 function graphics.loadcanvas(_w, _h) return rl.LoadRenderTexture(_w, _h) end
 function graphics.unloadcanvas(_canvas) rl.UnloadRenderTexture(_canvas) end
-function graphics.canvasfilter(_canvas, _filter) rl.SetTextureFilter(_canvas.texture, _filter) end
+function graphics.canvasfilter(_texture, _filter) rl.SetTextureFilter(_texture, _filter) end
 
 function graphics:load(_vwidth, _vheight)
 	assert(_vwidth ~= nil or _vheight ~= nil, "[Graphics] Error: virtual scale is not set correctly.")
 	self.virtual_width = _vwidth
 	self.virtual_height = _vheight
 	self.canvas = self.loadcanvas(self.virtual_width, self.virtual_height)
-	self.canvasfilter(self.canvas, self.canvas_filter.point)
+	self.canvasfilter(self.canvas.texture, self.canvas_filter.point)
 end
 function graphics:startrender() rl.BeginTextureMode(self.canvas) end
 function graphics:finishrender() rl.EndTextureMode() end

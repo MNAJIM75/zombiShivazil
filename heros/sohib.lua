@@ -17,4 +17,8 @@ function so:draw()
 	so.super.draw(self)
 end
 
+function so:collide(_body)
+	print("collided with -> " .. _body.id)
+end
+
 return so

@@ -19,7 +19,7 @@ end
 
 function sc:draw()
 	sc.super.draw(self)
-	DrawText("Level 1", 0, 0, 120, rl.GREEN)
+	DrawText("Level 1", 0, 0, 12, rl.GREEN)
 end
 
 function sc:unload()

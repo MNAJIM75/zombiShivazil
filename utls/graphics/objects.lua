@@ -13,13 +13,13 @@ end
 
 function objs.camera(_tx, _ty, _ox, _oy, _z, _r)
 	local camera = rl.new"Camera2D"
-	camera.target = objs.vector( 0, 0)
+	camera.target = objs.vector( _tx or 0, _ty or 0)
 	camera.offset = objs.vector(
-		config.graphics.window.width / 2, 
-		config.graphics.window.height / 2
+		_ox or config.graphics.window.width / 2, 
+		_oy or config.graphics.window.height / 2
 	)
-	camera.zoom = 1;
-	camera.rotation = 0;
+	camera.zoom = _z or 0.5;
+	camera.rotation = _r or 0;
 	return camera
 end
 

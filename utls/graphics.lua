@@ -12,6 +12,7 @@ function graphics.initwindow(_width, _height, _title)
 end
 function graphics.windowopen() return not rl.WindowShouldClose() end
 function graphics.closewindow()	rl.CloseWindow() end
+function graphics.deltatime() return rl.GetFrameTime() end
 
 -- draw functions
 
@@ -48,6 +49,14 @@ end
 function graphics.beginmode2d(_cam) rl.BeginMode2D(_cam) end
 function graphics.endmode2d() rl.EndMode2D() end
 
+-- matrix functions
+function graphics.push() rl.rlPushMatrix() end
+function graphics.pop() rl.rlPopMatrix() end
+function graphics.translate(_x, _y) rl.rlTranslatef(_x, _y, 0.0) end
+function graphics.rotate(_a) rl.rlRotatef(_a, 0, 0, 1) end
+function graphics.scalef(_s) rl.rlScalef(_s, _s, 1) end
+function graphics.identity() rl.rlLoadIdentity() end
 
-
+-- love simulator
+require'utls.graphics.love'
 return graphics

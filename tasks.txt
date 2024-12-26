@@ -1,0 +1,6 @@
+- shooting mechanism
+- line of site
+- enemies
+- level
+- main menu
+- score

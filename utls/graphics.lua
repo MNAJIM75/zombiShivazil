@@ -21,9 +21,10 @@ function graphics.enddrawing() rl.EndDrawing() end
 function graphics.clearbackground(_color) rl.ClearBackground(_color) end
 
 function graphics.drawrect(_x, _y, _w, _h, _c) rl.DrawRectangle(_x, _y, _w, _h, _c) end
-function graphics.drawcircle(_x, _y, _r, _c) rl.DrawCircle(_x, _y, _r, _c) end
+function graphics.drawcircle(_x, _y, _r, _c, _line) if _line then rl.DrawCircleLines(_x, _y, _r, _c) else rl.DrawCircle(_x, _y, _r, _c) end end
 function graphics.drawline(_x1, _y1, _x2, _y2, _c) rl.DrawLine(_x1, _y1, _x2, _y2, _c) end
 function graphics.drawtext(_text, _x, _y, _fs, _c) rl.DrawText(_text, _x, _y, _fs, _c) end
+function graphics.print(_text, _x, _y) graphics.drawtext(_text, _x, _y, 24, graphics.colors.red) end
 
 
 -- DrawTexturePro(Texture2D texture, Rectangle source, Rectangle dest, Vector2 origin, float rotation, Color tint);

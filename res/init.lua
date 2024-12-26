@@ -5,7 +5,7 @@ local unloadsprite = rl.UnloadTexture
 -- resources
 local tb = {
     resType = {
-        'player', 'enemy', 'item'
+        'player', 'enemy', 'item', 'vfx', 'weapon'
     }
 }
 local _tbName = "Res"
@@ -36,7 +36,7 @@ function tb:unload()
     end
 end
 
-function tb:getSprite(_type, _name)
+function tb:getsprite(_type, _name)
     for i, s in ipairs(self.resType) do
         if s == _type then
             return self[_type .. "_" .. _name]

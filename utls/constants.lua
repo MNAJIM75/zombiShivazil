@@ -3,9 +3,13 @@ local const = {}
 -- bullet constants
 const.bullet_maxspeed = 1000
 const.bullet_aimrange = 3
+const.bullet_maxlife = 1
 
 -- player constants
 const.player_maxspeed = 100
+
+-- enemy constants
+const.enemy_maxspeed = 50
 
 
 -- Gamepad buttons

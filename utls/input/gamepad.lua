@@ -62,7 +62,8 @@ function pad:getbuttonpressed(_key)
 end
 
 function pad:getFromController(_key)
-	return self.controller[_key]
+	if self.controller[_key] then return self.controller[_key]
+	else return self.controller.buttons[_key] end
 end
 
 return pad

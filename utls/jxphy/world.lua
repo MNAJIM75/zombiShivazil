@@ -17,7 +17,13 @@ function world:removeatindex(_index) table.remove(self.bodies, _index) end
 function world:removebody(_body) table.remove(self.bodies, self:getbodyindex(_body)) end
 
 function world:update(_dt)
-	for _i, _b in pairs(self.bodies) do phy.circle.update(_b, _dt) end
+	for _i = #self.bodies, 1, -1 do
+		phy.circle.update(self.bodies[_i], _dt)
+		if self.bodies[_i].dead then 
+			print("[Physics World] deleting .." .. self.bodies[_i].name)
+			self:removeatindex(_i)
+		end
+	end
 	for i = 1, #self.bodies - 1 do
 		local _ca = self:getatindex(i) 
 		if not _ca.skiploop then

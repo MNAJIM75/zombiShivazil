@@ -14,7 +14,15 @@ function weapon:new(_x, _y, _weaponname)
 	world:addbody(self)
 
 	self.offsetlength = 16
+	self.bulletlength = 16
 	self.headangle = 0
+
+	-- weapon properties
+	self.cooldown = .2
+	self.timer = 10
+
+	--eventsystem:subscripe("buttonpressed", self)
+	eventsystem:subscripe("buttonreleased", self)
 end
 
 function weapon:sethook(_player)	
@@ -27,9 +35,31 @@ function weapon:sethook(_player)
 		self.player = nil
 		self.skiploop = false
 	end
-	print(self.player.position)
 end
 function weapon:gethook() return not self.free end
+
+function weapon:shoot()
+	local _startpos = self.position + self.player.lookat * self.bulletlength
+	local bullet = entities.bullet(_startpos.x, _startpos.y, self.player.lookat)
+	world:addbody(bullet)
+	audio:play("shot")
+end
+
+function weapon:buttonreleased( _button )
+	print("[Weapon] " .. _button)
+	if "right_shoulder" == _button then self.timer = 10 end
+end
+
+
+function weapon:updateshoot( _dt )
+	if input:getactionvalue('fire') then
+		if self.timer > self.cooldown then
+			self:shoot()
+			self.timer = 0
+		end
+		self.timer = self.timer + _dt
+	end
+end
 
 function weapon:update(_dt)
 	if self:gethook() then -- hook
@@ -37,6 +67,8 @@ function weapon:update(_dt)
 		self.position.y = self.player.position.y + self.player.lookat.y * self.offsetlength
 		self.headangle = self.player.headangle
 		self:updatesprite()
+
+		self:updateshoot(_dt)
 	end
 end
 

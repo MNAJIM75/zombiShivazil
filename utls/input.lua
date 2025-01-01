@@ -22,7 +22,7 @@ function input:load()
 
 	self.actions.move = input.newaction("leftstick", libs.vector(0, 0))
 	self.actions.aim = input.newaction("rightstick", libs.vector(0, 0))
-	self.actions.fire = input.newaction("rightshoulder", false)
+	self.actions.fire = input.newaction("right_shoulder", false)
 	self.actions.grab = input.newaction("x", false)
 
 	eventsystem:subscripe("buttonpressed", self)

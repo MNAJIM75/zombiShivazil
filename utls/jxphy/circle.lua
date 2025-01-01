@@ -30,6 +30,7 @@ function circle:update(_dt)
 	self.position = self.position + self.velocity * _dt
 
 	if self.velocity:magSq() < self.velocitymin then self.velocity:set(0, 0) end
+	if self['afterphyupdate'] then self['afterphyupdate'](self, _dt) end
 end
 
 return circle

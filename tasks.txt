@@ -1,4 +1,4 @@
-- shooting mechanism
+- shooting mechanism [x]
 - line of site
 - enemies
 - level

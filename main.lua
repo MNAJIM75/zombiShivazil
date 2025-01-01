@@ -9,10 +9,13 @@ types = require"types"
 const = require'utls.constants'
 eventsystem = require'utls.eventsystem'
 res = require"res"
+audio = require'utls.audio'
 input = require'utls.input'
 entities = require'entities'
 heros = require'heros'
 smgr = require'utls.scene_manager'
+
+dofile("gundam.lua")
 
 
 graphics.initwindow(
@@ -26,6 +29,7 @@ graphics:load(
 )
 world = phy.world(0, 0)
 res:load()
+audio:load()
 input:load()
 smgr:load()
 
@@ -34,22 +38,34 @@ local camera = libs.camera()
 camera.scale = 2
 camera:setFollowStyle("TOPDOWN_TIGHT")
 
---for i = 1, 10 do world:addbody(phy.circle(i * 21, 0, 0, 0, 0, 0, 10, phy.getid())) end
+local _90drgree = math.pi / 2
+local _mapradius = 1000
+for i = 1, 4 do
+	local _px = math.cos(_90drgree * i) * _mapradius *2 
+	local _py = math.sin(_90drgree * i) * _mapradius *2
+	local _wall = types.entity(_px, _py, "wall")
+	_wall.radius = _mapradius
+	_wall.static = true
+	world:addbody(_wall)
+end
 local body = types.entity(100, 100, "dummy")
 body.static = true
-body.nobody = true
 world:addbody(body)
 
 local gun = entities.weapon(50, 50, "gun1")
 
-print(particlesystem)
+local enemy = entities.enemy(100, 200, "tader", 0)
+local dt = 0
 while graphics.windowopen() do
-	input:update()
-	smgr:update(graphics.deltatime())
-	camera:update(graphics.deltatime())
+	dt = graphics.deltatime()
+	input:update(dt)
+	smgr:update(dt)
+	camera:update(dt)
 	camera:follow(herox, heroy) 
-	gun:update(graphics.deltatime())
-	world:update(graphics.deltatime())
+	gun:update(dt)
+	enemy:update(dt)
+	world:update(dt)
+	audio:update(dt)
 	--particlesystem:update(graphics.deltatime())
 	
 
@@ -59,9 +75,10 @@ while graphics.windowopen() do
 			graphics.clearbackground(graphics.colors.white)
 			smgr:draw()
 			--body:draw()
+			enemy:draw()
 			gun:draw()
 			--particlesystem:draw()
-			--world:draw()
+			world:draw()
 			camera:detach()
 			camera:draw()
 		--graphics:finishrender()
@@ -70,6 +87,7 @@ while graphics.windowopen() do
 end
 
 smgr:unload()
+audio:unload()
 res:unload()
 graphics:unload()
 graphics.closewindow()

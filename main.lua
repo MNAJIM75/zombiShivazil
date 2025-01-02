@@ -15,7 +15,6 @@ entities = require'entities'
 heros = require'heros'
 smgr = require'utls.scene_manager'
 
-dofile("gundam.lua")
 
 
 graphics.initwindow(
@@ -23,6 +22,9 @@ graphics.initwindow(
 	config.graphics.window.height,
 	config.graphics.window.title
 )
+audio.initaudio()
+
+
 graphics:load(
 	config.graphics.window.vwidth,
 	config.graphics.window.vheight
@@ -90,8 +92,11 @@ smgr:unload()
 audio:unload()
 res:unload()
 graphics:unload()
+
+audio.closeaudio()
 graphics.closewindow()
 
+dofile("gundam.lua")
 
 
 -- printing all rl

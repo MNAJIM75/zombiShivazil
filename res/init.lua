@@ -1,8 +1,8 @@
 -- raylib functions
 local loadsprite = rl.LoadTexture
 local unloadsprite = rl.UnloadTexture
-local loadsound = rl.LoadSound
-local unloadsound = rl.UnloadSound
+local loadwave = rl.LoadWave
+local unloadwave = rl.UnloadWave
 
 -- resources
 local tb = {
@@ -32,7 +32,7 @@ function tb:load()
         if mode == 'file' then
             local _module = libs.path.basename(libs.path.splitext(P))
             if _module and "init" == _module then return end
-            tb[_module] = loadsound(P)
+            tb[_module] = loadwave(P)
             print("[".. _tbName .. "] -> " .. "[" .. type(tb[_module]).."]" .. _module .. " Loaded.")
         end
     end, {
@@ -48,7 +48,7 @@ function tb:unload()
         if "cdata" == type(v) then
             print("[".. _tbName .. "] -> " .. "[" .. type(tb[k]) .."]" .. k .. " Unloaded.")
             for _i, _type in ipairs(self.resType.audio) do
-                if string.find(k, _type) then unloadsound(v)
+                if string.find(k, _type) then unloadwave(v)
                 else unloadsprite(v); end
             end
         end

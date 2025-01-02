@@ -17,6 +17,10 @@ function enemy:new(_posx, _posy, _character, _index)
 	self.aimLength = 200
 	self.lookat = libs.vector(1, 0)
 	world:addbody(self)
+
+	-- hit and damage system
+	self.hittimer = 0
+	self.hitcooldown = 0.15
 end
 
 function enemy:updateaim()
@@ -33,10 +37,32 @@ function enemy:update(_dt)
 	self.velocity.x = self.lookat.x * self.speed
 	self.velocity.y = self.lookat.y * self.speed
 	self:updatesprite()
+
+	-- hit and damage system
+	self.hittimer = self.hittimer + _dt
+	if self.health < 0 and self.enable then
+		self.enable = false
+		audio:play("explosion")
+	end
+end
+
+function enemy:collide(_other)
+	if "bullet" == _other:gettype() then
+		self:takehit(_other.damage)
+	end
+end
+
+function enemy:takehit(_value)
+	if self.hittimer > self.hitcooldown then
+		self.health = self.health - _value
+		self.hittimer = 0
+		audio:play("hit")
+	end
 end
 
 function enemy:draw()
 	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.colors.white)
+	self:drawhealthbar()
 end
 
 return enemy

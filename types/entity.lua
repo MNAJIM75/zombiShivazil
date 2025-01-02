@@ -6,6 +6,8 @@ function ent:new(_posx, _posy, _name)
 	self._type = 'object'
 	self.enable = true
 	print(self.id)
+
+	self.health = 100
 end
 
 function ent:settype(_type) self._type = _type end
@@ -30,6 +32,9 @@ end
 function ent:setenable(_value) self.enable = _value end
 
 --function ent:update(_dt) end
---function ent:draw() end
+function ent:drawhealthbar()
+	graphics.drawrect(self.position.x - 60, self.position.y - 50, 120, 8, graphics.colors.white)
+	graphics.drawrect(self.position.x - 60, self.position.y - 50, 120 * (self.health / 100), 8, graphics.colors.red)
+end
 
 return ent

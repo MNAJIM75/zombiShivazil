@@ -26,10 +26,10 @@ function world:update(_dt)
 	end
 	for i = 1, #self.bodies - 1 do
 		local _ca = self:getatindex(i) 
-		if not _ca.skiploop then
+		if not _ca.skiploop and _ca.enable then
 			for j = i + 1, #self.bodies do
 				local _cb = self:getatindex(j)
-				if not _cb.skiploop then
+				if not _cb.skiploop and _cb.enable then
 					if phy.intersection.circles(_ca, _cb) then 
 						-- trigger functions
 						-- resolve collision

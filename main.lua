@@ -96,7 +96,6 @@ graphics:unload()
 audio.closeaudio()
 graphics.closewindow()
 
-dofile("gundam.lua")
 
 
 -- printing all rl

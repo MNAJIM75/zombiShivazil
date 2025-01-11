@@ -34,11 +34,11 @@ function input:checkDevice()
 end
 
 function input:buttonpressed(_button)
-	print("[Input]  " .. _button)
+	--print("[Input]  " .. _button)
 end
 
 function input:buttonreleased(_button)
-	print("[Input] .. " .. _button)
+	--print("[Input] .. " .. _button)
 end
 
 function input:update()

@@ -7,8 +7,9 @@ setmetatable(graphics, {__index = require"utls.graphics.renderer"})
 function graphics.initwindow(_width, _height, _title)
 	graphics.screen_width = _width
 	graphics.screen_height = _height
+	graphics.screen_length = math.sqrt((_width*_width)/4 + (_height*_height)/4)
 	rl.InitWindow(_width, _height, _title)
-	rl.SetTargetFPS(60)
+	--rl.SetTargetFPS(30)
 end
 function graphics.windowopen() return not rl.WindowShouldClose() end
 function graphics.closewindow()	rl.CloseWindow() end
@@ -18,7 +19,7 @@ function graphics.deltatime() return rl.GetFrameTime() end
 
 function graphics.begindrawing() rl.BeginDrawing() end
 function graphics.enddrawing() rl.EndDrawing() end
-function graphics.clearbackground(_color) rl.ClearBackground(_color) end
+function graphics.clearbackground(_color) rl.ClearBackground(_color or graphics.bgc) end
 
 function graphics.drawrect(_x, _y, _w, _h, _c) rl.DrawRectangle(_x, _y, _w, _h, _c) end
 function graphics.drawcircle(_x, _y, _r, _c, _line) if _line then rl.DrawCircleLines(_x, _y, _r, _c) else rl.DrawCircle(_x, _y, _r, _c) end end
@@ -57,6 +58,24 @@ function graphics.translate(_x, _y) rl.rlTranslatef(_x, _y, 0.0) end
 function graphics.rotate(_a) rl.rlRotatef(_a, 0, 0, 1) end
 function graphics.scalef(_s) rl.rlScalef(_s, _s, 1) end
 function graphics.identity() rl.rlLoadIdentity() end
+
+--[[
+function graphics.gettint(_x, _y)
+	local _x, _y = camera:toCameraCoords(_x, _y)
+	_x, _y = _x - graphics.screen_width / 2, _y - graphics.screen_height / 2
+	local _length = math.sqrt(_x*_x + _y*_y)
+	local _value = 1 - _length / graphics.screen_length
+	
+	local _color = graphics.colors:getshade(_value)
+	return _color
+end
+]]
+
+
+function graphics.gettint(_x, _y)
+	local _cx, _cy = camera:toCameraCoords(_x, _y)
+	return graphics.colors:getshade(_cx, _cy, 3)
+end
 
 -- love simulator
 require'utls.graphics.love'

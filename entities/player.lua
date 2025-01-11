@@ -37,6 +37,7 @@ function player:updatePosition(_dt)
 	local _rawVelocity = input:getactionvalue("move"):norm()
 	if _rawVelocity:magSq() > 0 then
 		self.velocity:set(_rawVelocity.x * self.speed, _rawVelocity.y * self.speed)
+		--psys.dust:emit(self.position.x, self.position.y)
 	end
 	--player.super.update(self, _dt)
 	--self.position.x = self.position.x + _dt * _rawVelocity.x * self.speed
@@ -90,7 +91,7 @@ function player:draw()
 	--graphics.drawcircle(self.position.x, self.position.y, 20, RED)
 	--graphics.drawline(self.position.x, self.position.y, self.aim.x, self.aim.y, GREEN)
 
-	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.colors.white)
+	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.gettint(herox, heroy))
 	--graphics.print(tostring(self.headangle), self.position.x - 100, self.position.y - 100)
 	--graphics.endmode2d()
 end

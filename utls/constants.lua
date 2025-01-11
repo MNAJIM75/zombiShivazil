@@ -3,7 +3,7 @@ local const = {}
 -- bullet constants
 const.bullet_maxspeed = 1000
 const.bullet_aimrange = 3
-const.bullet_maxlife = 1
+const.bullet_maxlife = 3
 
 -- player constants
 const.player_maxspeed = 100
@@ -39,6 +39,8 @@ const.gamepad_axis_right_y				= 3		-- Gamepad right stick Y axis
 const.gamepad_axis_left_trigger			= 4		-- Gamepad back trigger left, pressure level: [1..-1]
 const.gamepad_axis_right_trigger		= 5		-- Gamepad back trigger right, pressure level: [1..-1]
 
-
+-- Quadtree
+const.quadtree_capacity = 4
+const.quadtree_subdivision = 4
 
 return const

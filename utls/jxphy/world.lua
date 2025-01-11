@@ -20,7 +20,7 @@ function world:update(_dt)
 	for _i = #self.bodies, 1, -1 do
 		phy.circle.update(self.bodies[_i], _dt)
 		if self.bodies[_i].dead then 
-			print("[Physics World] deleting .." .. self.bodies[_i].name)
+			--print("[Physics World] deleting .." .. self.bodies[_i].name)
 			self:removeatindex(_i)
 		end
 	end

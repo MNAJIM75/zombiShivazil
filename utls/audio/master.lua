@@ -11,7 +11,7 @@ function master:update()
 		local _sound = self.toplay:pop()
 		audio.playsound(_sound)
 		self.playing:push(_sound)
-		print("[Audio Master] adding to playing.")
+		--print("[Audio Master] adding to playing.")
 	end
 
 	for _i, _v in ipairs(self.playing.list) do
@@ -19,20 +19,21 @@ function master:update()
 			local _playedsound = _v
 			table.remove(self.playing.list, _i)
 			self.played:push(_playedsound)
-			print("[Audio Master] adding to played.")
+			--print("[Audio Master] adding to played.")
 		end
 	end
 
 	if self.played:length() > 0 then
 		audio.unloadsound(self.played:pop())
-		print("[Audio Master] removed from the list")
+		--print("[Audio Master] removed from the list")
 	end
 end
 
-function master:add(_wavesource)
+function master:add(_wavesource, _mixerfunc)
 	local _sound = audio.loadsoundfromwave(_wavesource)
+	if _mixerfunc then _mixerfunc(_sound) end
 	self.toplay:push(_sound)
-	print("[Audio Master] adding to toplay.")
+	--print("[Audio Master] adding to toplay.")
 end
 
 return master

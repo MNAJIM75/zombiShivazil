@@ -1,4 +1,5 @@
 local weapon = types.entity:extend()
+local timetoround = 0.1279317697228145
 
 function weapon:new(_x, _y, _weaponname)
 	weapon.super.new(self, _x, _y, "weapon_" .. _weaponname)
@@ -18,8 +19,10 @@ function weapon:new(_x, _y, _weaponname)
 	self.headangle = 0
 
 	-- weapon properties
-	self.cooldown = .2
-	self.timer = 10
+	self.firecooldown = timetoround
+	self.firetimer = 10
+	self.mag = 20
+	self.storage = 100
 
 	--eventsystem:subscripe("buttonpressed", self)
 	eventsystem:subscripe("buttonreleased", self)
@@ -30,6 +33,7 @@ function weapon:sethook(_player)
 		self.free = false
 		self.player = _player
 		self.skiploop = true
+		audio:play("grab")
 	else
 		self.free = true
 		self.player = nil
@@ -42,22 +46,25 @@ function weapon:shoot()
 	local _startpos = self.position + self.player.lookat * self.bulletlength
 	local bullet = entities.bullet(_startpos.x, _startpos.y, self.player.lookat)
 	world:addbody(bullet)
-	audio:play("shot")
+	audio:play("shoot")
+	camera:shake(1, 1, 10)
+	psys:emit(_startpos.x, _startpos.y)
 end
 
 function weapon:buttonreleased( _button )
-	print("[Weapon] " .. _button)
-	if "right_shoulder" == _button then self.timer = 10 end
+	--print("[Weapon] " .. _button)
+	if "right_shoulder" == _button then self.firetimer = 10 end
 end
 
 
 function weapon:updateshoot( _dt )
 	if input:getactionvalue('fire') then
-		if self.timer > self.cooldown then
+		if self.firetimer > self.firecooldown and self.mag > 0 then
 			self:shoot()
-			self.timer = 0
+			self.firetimer = 0
+			self.mag = self.mag - 1
 		end
-		self.timer = self.timer + _dt
+		self.firetimer = self.firetimer + _dt
 	end
 end
 

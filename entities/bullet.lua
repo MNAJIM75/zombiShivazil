@@ -13,6 +13,8 @@ function bullet:new(_x, _y, _direction)
 
 	-- hit and damage system
 	self.damage = 10 * math.random()
+	self.dead = false
+	self.startcount = true
 end
 
 function bullet:afterphyupdate(_dt)

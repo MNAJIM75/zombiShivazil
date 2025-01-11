@@ -21,6 +21,7 @@ function enemy:new(_posx, _posy, _character, _index)
 	-- hit and damage system
 	self.hittimer = 0
 	self.hitcooldown = 0.15
+	self.headangle = -self.lookat:heading() * rad2deg
 end
 
 function enemy:updateaim()
@@ -42,7 +43,7 @@ function enemy:update(_dt)
 	self.hittimer = self.hittimer + _dt
 	if self.health < 0 and self.enable then
 		self.enable = false
-		audio:play("explosion")
+		audio:play("death")
 	end
 end
 
@@ -61,7 +62,7 @@ function enemy:takehit(_value)
 end
 
 function enemy:draw()
-	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.colors.white)
+	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.gettint(self.position.x, self.position.y))
 	self:drawhealthbar()
 end
 

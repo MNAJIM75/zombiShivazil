@@ -5,7 +5,7 @@ function ent:new(_posx, _posy, _name)
 	self.name = _name or "Entity"
 	self._type = 'object'
 	self.enable = true
-	print(self.id)
+	--print(self.id)
 
 	self.health = 100
 end

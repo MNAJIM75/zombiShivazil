@@ -3,11 +3,19 @@ local audio = {
 		'sfx'
 	},
 	sounds = {
-		shot = {},
+		shoot = {},
 		hit = {},
-		explosion = {},
-		ss = {}
+		death = {},
+		grab = {},
+		tader = {}
 	},
+	mixer = {
+		shoot = 1,
+		hit = 0.1,
+		death = 0.3,
+		grab = 0.6,
+		tader = 1
+	}
 }
 
 function audio:load()
@@ -23,7 +31,7 @@ function audio:load()
 		end
 	end
 
-	self.setmastervolume(0.4)
+	self.setmastervolume(0.9)
 
 	-- creating sound alias for multi use sfx
 	self.master = require'utls.audio.master'
@@ -34,9 +42,12 @@ function audio:update(_dt)
 	self.master:update(_dt)
 end
 
-function audio:play(_sfxname)
+function audio:play(_sfxname, _pan)
 	assert(self.sounds[_sfxname], "[Audio] Error: No sound was found with the following name " .. _sfxname ..'.')
-	self.master:add(self.sounds[_sfxname][1])
+	self.master:add(self.sounds[_sfxname][1], function(_sound)
+		audio.setsoundvolume(_sound, self.mixer[_sfxname])
+		if _pan then audio.setsoundpan(_sound, _pan) end
+	end)
 end
 
 function audio:unload()

@@ -23,7 +23,7 @@ end
 colors.getshade = function(self, _x, _y, _r)
 	if not self.shade then
 		local _hsw = graphics.screen_width / 2
-		local _shadeslevel = 14
+		local _shadeslevel = const.graphics_shader_level
 		self.shade = {}
 		for _i = 0, _hsw, _hsw / _shadeslevel do
 			local _ratio = _i / _hsw

@@ -44,7 +44,7 @@ function weapon:gethook() return not self.free end
 
 function weapon:shoot()
 	local _startpos = self.position + self.player.lookat * self.bulletlength
-	local bullet = entities.bullet(_startpos.x, _startpos.y, self.player.lookat)
+	local bullet = entities.bullet(_startpos.x, _startpos.y, self.player.lookat, self.headangle)
 	world:addbody(bullet)
 	audio:play("shoot")
 	camera:shake(1, 1, 10)
@@ -85,11 +85,11 @@ end
 
 function weapon:draw()
 	if self.free then
-		graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, 0, graphics.colors.white)
+		self:drawsprite()
 		graphics.drawcircle(self.position.x, self.position.y, self.spriteconf.rectsource.width, graphics.colors.red, true)
 	else
 		graphics.drawline(self.position.x, self.position.y, self.player.aim.x, self.player.aim.y, graphics.colors.red)
-		graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, self.headangle, graphics.colors.white)
+		self:drawsprite(self.headangle)
 	end
 end
 

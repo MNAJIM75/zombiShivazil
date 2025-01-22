@@ -77,6 +77,14 @@ function graphics.gettint(_x, _y)
 	return graphics.colors:getshade(_cx, _cy, 3)
 end
 
+-- some bind shit
+graphics.drawtexture = rl.DrawTexture
+graphics.isfullscreen = rl.IsWindowFullscreen
+graphics.togglefullscreen = rl.ToggleFullscreen
+
+--DrawTextEx(Font font, const char *text, Vector2 position, float fontSize, float spacing, Color tint)
+graphics.drawtextex = rl.DrawTextEx
+
 -- love simulator
 require'utls.graphics.love'
 return graphics

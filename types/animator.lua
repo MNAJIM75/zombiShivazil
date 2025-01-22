@@ -15,7 +15,7 @@ function animator:new(_sprite, _framewidth, _frameheight, _animations, _defaulta
 	self.nextanimation = nil
 	self.scale = 1
 	self.ratation = 0
-	self.tint = rl.WHITE
+	self.tint = graphics.colors.white
 	
 	self.maxcol = self.sprite.width / self.frame.width
 	self.maxrow = self.sprite.height / self.frame.height
@@ -73,18 +73,7 @@ function animator:checknext()
 end
 
 function animator:draw()
-	--DrawTexturePro(Texture2D texture, 
-	--	Rectangle source, 
-	--	Rectangle dest, 
-	--	Vector2 origin, 
-	--	float rotation, 
-	--	Color tint
-	--)
-	rl.DrawTexturePro(self.sprite, self.framebox, self.framedest, self.framecenter, self.rotation, self.tint)
-	rl.DrawText(tostring(self.frameindex), 10, 10, 32, rl.GREEN)
-	rl.DrawText(tostring(self.framebox.x), 10, 50, 32, rl.GREEN)
-	rl.DrawText(tostring(self.framebox.y), 10, 90, 32, rl.GREEN)
-	rl.DrawText(tostring(self.timer), 10, 90+40, 32, rl.GREEN)
+	graphics.drawsprite(self.sprite, self.framebox, self.framedest, self.framecenter, self.rotation, self.tint)
 end
 
 function animator:pause() self.playanimation = false end

@@ -37,11 +37,7 @@ function player:updatePosition(_dt)
 	local _rawVelocity = input:getactionvalue("move"):norm()
 	if _rawVelocity:magSq() > 0 then
 		self.velocity:set(_rawVelocity.x * self.speed, _rawVelocity.y * self.speed)
-		--psys.dust:emit(self.position.x, self.position.y)
 	end
-	--player.super.update(self, _dt)
-	--self.position.x = self.position.x + _dt * _rawVelocity.x * self.speed
-	--self.position.y = self.position.y + _dt * _rawVelocity.y * self.speed
 	herox = self.position.x
 	heroy = self.position.y
 	self:updatesprite()
@@ -59,14 +55,7 @@ end
 
 function player:collide(_body)
 	if _body:gettype() == 'weapon' and input:getactionvaluepressed("grab") then
-		if self.weapon then --[[
-			local _groundposition = _body.position:clone()
-			local __body = self.weapon
-			self.weapon:sethook(nil)
-			__body.position = _groundposition
-			self.weapon = _body
-			self.weapon:sethook(self)
-			]]
+		if self.weapon then print("Gundam")
 		else
 			self.weapon = _body
 			self.weapon:sethook(self)

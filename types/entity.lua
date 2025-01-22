@@ -37,4 +37,8 @@ function ent:drawhealthbar()
 	graphics.drawrect(self.position.x - 60, self.position.y - 50, 120 * (self.health / 100), 8, graphics.colors.red)
 end
 
+function ent:drawsprite(_angle)
+	graphics.drawsprite(self.sprite, self.spriteconf.rectsource, self.spriteconf.rectdest, self.spriteconf.origin, _angle or 0, graphics.colors.white)
+end
+
 return ent

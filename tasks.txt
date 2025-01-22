@@ -1,6 +1,8 @@
 - shooting mechanism [x]
-- line of site
-- enemies
-- level
+- line of site [x]
+- enemy [x]
+- enemy manager
+- entery level
+- level 
 - main menu
 - score

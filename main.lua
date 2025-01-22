@@ -1,3 +1,11 @@
+-- Before code execution
+collectgarbage("collect")
+local memoryBefore = collectgarbage("count")
+print("Memory usage before: " .. memoryBefore .. " KB")
+
+-- Your code here
+
+
 setmetatable(_G, {__index = rl})
 rad2deg = 180/math.pi
 
@@ -17,7 +25,8 @@ heros		=	require'heros'
 smgr		=	require'utls.scene_manager'
 funcs		=	require'utls.funcs'
 
-
+assert(config.graphics.enable, "[Game] Error: Faild to Intialize Graphics.")
+assert(config.audio.enable, "[Game] Error: Faild to Intialize Audio.")
 gamerun = true
 graphics.initwindow(
 	config.graphics.window.width,
@@ -30,6 +39,12 @@ graphics:load(
 	config.graphics.window.vwidth,
 	config.graphics.window.vheight
 )
+if config.graphics.window.fullscreen then
+	if not graphics.isfullscreen() then
+		graphics.togglefullscreen()
+	end
+end
+
 world = phy.world(0, 0)
 res:load()
 audio:load()
@@ -42,6 +57,7 @@ local gridRect = graphics.objects.rectangle(0, 0, 1920, 1080)
 camera = libs.camera()
 camera.scale = 1.5
 camera:setFollowStyle("TOPDOWN_TIGHT")
+camera:follow(0, 0)
 
 -- konoyaro
 psys = types.kono_emitter(5, {WHITE, RAYWHITE, LIGHTGRAY})
@@ -56,43 +72,24 @@ for i = 1, 4 do
 	_wall.static = true
 	world:addbody(_wall)
 end
-local body = types.entity(100, 100, "dummy")
-body.static = true
-world:addbody(body)
 
-local gun = entities.weapon(50, 50, "gun1")
-
-local enemy = entities.enemy(100, 200, "tader", 0)
 local dt = 0
 while graphics.windowopen() and gamerun do
 	dt = graphics.deltatime()
 	input:update(dt)
 	smgr:update(dt)
-	gun:update(dt)
-	--enemy:update(dt)
 	world:update(dt)
 	audio:update(dt)
-	psys:update(dt)
 	camera:update(dt)
-	camera:follow(herox, heroy)
-	--particlesystem:update(graphics.deltatime())
 	
 
 	graphics.begindrawing()
-		--graphics:startrender()
-			graphics.clearbackground(graphics.colors.background)
-			camera:attach()
-			smgr:draw()
-			psys:draw()
-			--body:draw()
-			enemy:draw()
-			gun:draw()
-			--particlesystem:draw()
-			world:draw()
-			camera:detach()
-			camera:draw()
-		--graphics:finishrender()
-		--graphics:drawcanvas()
+		graphics.clearbackground(graphics.colors.background)
+		--camera:attach()
+		smgr:draw()
+		--world:draw()
+		--camera:detach()
+		--camera:draw()
 		rl.DrawFPS(10,10)
 	graphics.enddrawing()
 end
@@ -107,10 +104,11 @@ graphics.closewindow()
 
 
 
--- printing all rl
---[[
-local _file = io.open('rl.txt', 'a')
-io.output(_file)
-for k, v in pairs(rl) do io.write(tostring(k) .. " -> " .. tostring(v) .. "\n") end
-io.close(_file)
-]]
+-- After code execution
+collectgarbage("collect")
+local memoryAfter = collectgarbage("count")
+print("Memory usage after: " .. memoryAfter .. " KB")
+
+-- Calculate memory difference
+local memoryLeak = memoryAfter - memoryBefore
+print("Memory leak: " .. memoryLeak .. " KB")

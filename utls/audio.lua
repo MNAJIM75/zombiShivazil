@@ -20,7 +20,8 @@ local audio = {
 
 function audio:load()
 	-- loading the sounds from the resources utls
-	for _resname, _resobject in pairs(res) do
+	
+	for _resname, _resobject in pairs(res.audio) do
 		if string.find(_resname, self.prefix[1]) then
 			for _soundkey, _soundtable in pairs(self.sounds) do
 				if string.find(_resname, _soundkey) then
@@ -30,6 +31,7 @@ function audio:load()
 			end
 		end
 	end
+	
 
 	self.setmastervolume(0.9)
 

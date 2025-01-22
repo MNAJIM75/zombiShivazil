@@ -3,7 +3,7 @@ local const = {}
 -- bullet constants
 const.bullet_maxspeed = 1000
 const.bullet_aimrange = 3
-const.bullet_maxlife = 3
+const.bullet_maxlife = 1
 
 -- player constants
 const.player_maxspeed = 100
@@ -42,5 +42,12 @@ const.gamepad_axis_right_trigger		= 5		-- Gamepad back trigger right, pressure l
 -- Quadtree
 const.quadtree_capacity = 4
 const.quadtree_subdivision = 4
+
+-- graphics
+const.graphics_shader_level = config.graphics.rtx and 20 or 7
+
+-- UI
+const.ui_button_width = 120
+const.ui_button_height = 75
 
 return const

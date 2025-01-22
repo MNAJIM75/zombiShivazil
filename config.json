@@ -1,17 +1,19 @@
 {
   "graphics": {
-  	"enable": true,
+    "enable": true,
     "window": {
       "width": 960,
       "height": 540,
       "vwidth": 480,
       "vheight": 270,
-      "title": "Gundam Game",
-      "fullscreen": true,
+      "title": "Zombi Shirvaizil",
+      "fullscreen": false,
       "vsync": true
     },
-    "audio": {
-    	"enable": false
-    }
+    "rtx" : true
   },
+  "audio": {
+    "enable": true,
+    "level" : 1
+  }
 }

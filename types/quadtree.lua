@@ -16,11 +16,14 @@ end
 -- we assume that the _object has a vector called position with x and y.
 function quadtree:insert(_object)
 	local _obx, _oby = _object.position.x, _object.position.y
-	local _objectposition = graphics.objects.vector(x, y)
+	local _objectposition = graphics.objects.vector(_obx, _oby)
 	local _radius = _object.radius
 	if not crcollision(_objectposition, _radius, self.boundary) then return false end
-	if self.length < consts.quadtree_capacity then
-		table.insert(self.objects, _object)
+	if self.length < const.quadtree_capacity then
+		table.insert(self.objects, {
+			position = _objectposition,
+			radius = _radius
+		})
 		self.length = self.length + 1
 		return true
 	else
@@ -37,10 +40,10 @@ function quadtree:subdivision()
 	local _x, _y = self.boundary.x, self.boundary.y
 	local _nw, _nh = self.boundary.width / 2, self.boundary.height / 2
 	
-	self.nw = types.quadtree(_x, _y, _nw, _h)
+	self.nw = types.quadtree(_x, _y, _nw, _nh)
 	self.ne = types.quadtree(_x + _nw, _y, _nw, _nh)
 	self.sw = types.quadtree(_x, _y + _nh, _nw, _nh)
-	self.sw = types.quadtree(_x + _nw, _y + _nh, _nw, _nh)
+	self.se = types.quadtree(_x + _nw, _y + _nh, _nw, _nh)
 	
 	self.divided = true
 end
@@ -60,16 +63,17 @@ function quadtree:getobjectsinlist(_rect, _list)
 		self.sw:getobjects(_rect, _list); self.se:getobjects(_rect, _list)
 	end
 	for _i, _obj in pairs(self.objects) do
-		if crcollision(graphics.objects.vector(_obj.position.x, _obj.position.y), _obj.radius, _rect) then
+		if crcollision(_obj.position, _obj.radius, _rect) then
 			table.insert(_list, _obj)
 		end
 	end
 end
 
-function quadtree:getobjects(_rect)
-	local _list = {}
+function quadtree:getobjects(_rect, _list)
+	--local _list = {}
 	self:getobjectsinlist(_rect, _list)
-	return _list
+	
+	--return _list
 end
 
 return quadtree
